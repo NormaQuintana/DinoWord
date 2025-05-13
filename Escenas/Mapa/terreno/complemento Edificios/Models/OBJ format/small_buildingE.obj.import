@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://exgk7jbr4sg4"
+path="res://.godot/imported/small_buildingE.obj-d4b0a260ef532ca90f7059d4096ad977.mesh"
+
+[deps]
+
+files=["res://.godot/imported/small_buildingE.obj-d4b0a260ef532ca90f7059d4096ad977.mesh"]
+
+source_file="res://Escenas/Mapa/terreno/complemento Edificios/Models/OBJ format/small_buildingE.obj"
+dest_files=["res://.godot/imported/small_buildingE.obj-d4b0a260ef532ca90f7059d4096ad977.mesh", "res://.godot/imported/small_buildingE.obj-d4b0a260ef532ca90f7059d4096ad977.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

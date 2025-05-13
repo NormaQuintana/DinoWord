@@ -1,0 +1,238 @@
+[gd_scene load_steps=30 format=3 uid="uid://c57j8kk4h0e4e"]
+
+[ext_resource type="Shader" uid="uid://cngq07g76wa7l" path="res://mundo.gdshader" id="1_gkpbq"]
+[ext_resource type="Script" uid="uid://cectcb3i57cu8" path="res://scrips/mundo.gd" id="1_syf7j"]
+[ext_resource type="MeshLibrary" uid="uid://dfdmd68peu4yd" path="res://terreno/modelos.tres" id="2_g8a5c"]
+[ext_resource type="AudioStream" uid="uid://db63ty2xd6h7r" path="res://Music/Woody Path.mp3" id="2_vblcf"]
+[ext_resource type="PackedScene" uid="uid://djgm4up7p6hui" path="res://terreno/complemento Terrenos/Models/FBX format/patch-sand.fbx" id="3_6eh68"]
+[ext_resource type="PackedScene" uid="uid://l66ra4gqr16e" path="res://terreno/complemento Terrenos/Models/FBX format/patch-grass.fbx" id="4_qatul"]
+[ext_resource type="PackedScene" uid="uid://bglvbpsbupu6d" path="res://terreno/complemento Terrenos/Models/FBX format/rocks-a.fbx" id="5_jgiah"]
+[ext_resource type="PackedScene" uid="uid://dx5dqjk6087vd" path="res://terreno/complemento Terrenos/Models/FBX format/rocks-b.fbx" id="6_ntaqy"]
+[ext_resource type="PackedScene" uid="uid://cmf00mfy4e01q" path="res://terreno/complemento Terrenos/Models/FBX format/rocks-c.fbx" id="7_p8fee"]
+[ext_resource type="PackedScene" uid="uid://f6q67q1gmscn" path="res://Modelos interactivos/Casa.fbx" id="8_rvffb"]
+[ext_resource type="PackedScene" uid="uid://cqm4tsoonxb65" path="res://Modelos interactivos/Escuela_Frente (1).glb" id="10_5lbaf"]
+[ext_resource type="PackedScene" uid="uid://dgjn2hhv3ukcg" path="res://Modelos interactivos/Dinobucks.glb" id="10_84ukn"]
+[ext_resource type="PackedScene" uid="uid://b3ckg0lh7pnhp" path="res://Modelos interactivos/joselineTienda (1).glb" id="12_ewfuk"]
+[ext_resource type="PackedScene" uid="uid://i5neq5wwy0i6" path="res://terreno/complemento Edificios/Models/GLTF format/large_buildingG.glb" id="12_yf7ds"]
+[ext_resource type="PackedScene" uid="uid://ddvfb45ap2h4b" path="res://Modelos interactivos/edificio (3).glb" id="14_w05dh"]
+[ext_resource type="PackedScene" uid="uid://c5tp0q4sbs05x" path="res://terreno/complemento Calles/stopsign3.glb" id="15_vblcf"]
+[ext_resource type="PackedScene" uid="uid://dubsd36yo3m1h" path="res://terreno/complemento Autos/Models/GLB format/sedan-sports.glb" id="16_hk8x4"]
+[ext_resource type="PackedScene" uid="uid://c1aky0gb05vhy" path="res://escenas/OverlayUI.tscn" id="17_7dq3s"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_a6y7u"]
+
+[sub_resource type="Sky" id="Sky_7nliu"]
+sky_material = SubResource("ProceduralSkyMaterial_a6y7u")
+
+[sub_resource type="Environment" id="Environment_n2q4y"]
+background_mode = 2
+sky = SubResource("Sky_7nliu")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vlh0t"]
+size = Vector2(9000, 9000)
+subdivide_width = 64
+subdivide_depth = 64
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gfp0v"]
+render_priority = 0
+shader = ExtResource("1_gkpbq")
+shader_parameter/WATER_COL = Vector4(0.04, 0.38, 0.98, 1)
+shader_parameter/WATER2_COL = Vector4(0.04, 0.35, 0.98, 1)
+shader_parameter/FOAM_COL = Vector4(0.8125, 0.9609, 0.9648, 1)
+shader_parameter/distortion_speed = 2.0
+shader_parameter/tile = Vector2(50, 50)
+shader_parameter/height = 2.0
+shader_parameter/wave_size = Vector2(1, 1)
+shader_parameter/wave_speed = 1.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dlu82"]
+lightmap_size_hint = Vector2i(252, 252)
+flip_faces = true
+size = Vector2(20, 20)
+subdivide_width = 5
+subdivide_depth = 5
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pvn5q"]
+render_priority = 0
+shader = ExtResource("1_gkpbq")
+shader_parameter/WATER_COL = Vector4(0.04, 0.38, 1, 1)
+shader_parameter/WATER2_COL = Vector4(0.04, 0.35, 0.78, 1)
+shader_parameter/FOAM_COL = Vector4(0.8125, 0.9609, 0.9648, 1)
+shader_parameter/distortion_speed = 2.0
+shader_parameter/tile = Vector2(5, 5)
+shader_parameter/height = 2.0
+shader_parameter/wave_size = Vector2(2, 2)
+shader_parameter/wave_speed = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_syf7j"]
+size = Vector3(13.536, 8.92307, 13.5871)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vblcf"]
+size = Vector3(11.6691, 5.18356, 6.83496)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hk8x4"]
+size = Vector3(13.627, 30.8701, 10.5931)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bi0k3"]
+size = Vector3(4.94336, 2.14551, 5.93853)
+
+[node name="Mundo" type="Node3D"]
+script = ExtResource("1_syf7j")
+
+[node name="WoodyPath" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_vblcf")
+autoplay = true
+bus = &"Music"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_n2q4y")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.687146, -0.219462, 0.69258, 0.13417, 0.898555, 0.417848, -0.714023, 0.380047, -0.587994, -4.74954, 16.6047, 8.22639)
+shadow_enabled = true
+
+[node name="Entorno" type="Node3D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="oceano" type="Node3D" parent="Entorno"]
+metadata/_edit_lock_ = true
+
+[node name="agua" type="MeshInstance3D" parent="Entorno/oceano"]
+mesh = SubResource("PlaneMesh_vlh0t")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("ShaderMaterial_gfp0v")
+metadata/_edit_lock_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Entorno/oceano"]
+transform = Transform3D(100, 0, 0, 0, -99.9638, -2.69098, 0, 2.69098, -99.9638, 0, 0, 0)
+visible = false
+mesh = SubResource("PlaneMesh_dlu82")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("ShaderMaterial_pvn5q")
+metadata/_edit_lock_ = true
+
+[node name="terreno" type="Node3D" parent="Entorno"]
+transform = Transform3D(1, 0, 0, 0, 2.35236, 0, 0, 0, 1, -0.734226, -3.20037, 0.879329)
+
+[node name="patch-sand" parent="Entorno/terreno" instance=ExtResource("3_6eh68")]
+transform = Transform3D(50.59, 0, 0, 0, 4.2, 0, 0, 0, 50.59, -4.66129, 2.67274, -41.0905)
+
+[node name="patch-grass" parent="Entorno/terreno" instance=ExtResource("4_qatul")]
+transform = Transform3D(-61.5578, 0, 0.271816, 0, 7.11563, 0, -0.271816, 0, -61.5578, -0.825348, 2.95732, -45.5381)
+
+[node name="patch-sand2" parent="Entorno/terreno" instance=ExtResource("3_6eh68")]
+transform = Transform3D(-42.4456, 0, -27.5266, 0, 4.2, 0, 27.5266, 0, -42.4456, -154.716, 1.86733, 86.6859)
+
+[node name="patch-sand3" parent="Entorno/terreno" instance=ExtResource("3_6eh68")]
+transform = Transform3D(50.59, 0, 0, 0, 4.2, 0, 0, 0, 50.59, 87.7073, 1.86733, 123.941)
+
+[node name="patch-grass2" parent="Entorno/terreno" instance=ExtResource("4_qatul")]
+transform = Transform3D(-59.9444, 0, -2.58264, 0, 5.65987, 0, 2.58264, 0, -59.9444, 90.3292, 2.76012, 121.933)
+
+[node name="patch-grass3" parent="Entorno/terreno" instance=ExtResource("4_qatul")]
+transform = Transform3D(48.8055, 0, 34.9001, 0, 5, 0, -34.9001, 0, 48.8055, -160.623, 2.79857, 94.6508)
+
+[node name="patch-grass4" parent="Entorno/terreno" instance=ExtResource("4_qatul")]
+transform = Transform3D(79.1237, 0, 11.8082, 0, 27.6206, 0, -11.8082, 0, 79.1237, -38.8691, 2.79857, 68.8487)
+
+[node name="patch-grass5" parent="Entorno/terreno" instance=ExtResource("4_qatul")]
+transform = Transform3D(78.4126, 0, -7.92887, 0, 44.9707, 0, 15.8577, 0, 39.2063, -22.3227, 3.43389, 192.7)
+
+[node name="patch-grass6" parent="Entorno/terreno" instance=ExtResource("4_qatul")]
+transform = Transform3D(-7.61866, 0, 39.2677, 0, 27.6139, 0, -39.2677, 0, -7.61866, -204.422, 2.79857, 115.006)
+
+[node name="patch-grass7" parent="Entorno/terreno" instance=ExtResource("4_qatul")]
+transform = Transform3D(12.174, 0, -38.1024, 0, 20, 0, 38.1024, 0, 12.174, 117.13, 2.79857, 133.549)
+
+[node name="rocks-a" parent="Entorno/terreno" instance=ExtResource("5_jgiah")]
+transform = Transform3D(29.774, 0, -3.67531, 0, 12.7531, 0, 3.67531, 0, 29.774, 64.7772, 2.04436, 245.709)
+
+[node name="rocks-b" parent="Entorno/terreno" instance=ExtResource("6_ntaqy")]
+transform = Transform3D(40, 0, 0, 0, 20, 0, 0, 0, 40, -6.55437, 0, 277.557)
+
+[node name="rocks-a2" parent="Entorno/terreno" instance=ExtResource("5_jgiah")]
+transform = Transform3D(-18.2757, 0, 23.7907, 0, 12.7531, 0, -23.7907, 0, -18.2757, -230.936, 2.04436, 240.474)
+
+[node name="rocks-b2" parent="Entorno/terreno" instance=ExtResource("6_ntaqy")]
+transform = Transform3D(21.0759, 0.0291066, 33.9971, -0.0169636, 25, -0.0442773, -33.9972, 0.0055701, 21.0759, -120.76, 0, 269.486)
+
+[node name="rocks-c" parent="Entorno/terreno" instance=ExtResource("7_p8fee")]
+transform = Transform3D(-19.9479, 0, 1.44283, 0, 20, 0, -1.44283, 0, -19.9479, 146.22, 0, 228.237)
+
+[node name="rocks-a3" parent="Entorno/terreno" instance=ExtResource("5_jgiah")]
+transform = Transform3D(-7.4753, 0, 18.5505, 0, 5, 0, -18.5505, 0, -7.4753, -302.857, 1.56662, 180.753)
+
+[node name="Construcciones" type="Node3D" parent="Entorno"]
+
+[node name="Casa" parent="Entorno/Construcciones" instance=ExtResource("8_rvffb")]
+transform = Transform3D(-2.49894, 0, -0.0648718, 0, 3.328, 0, 0.0727263, 0, -2.22906, 74.6328, 6.38529, -88.7497)
+
+[node name="Area3D" type="Area3D" parent="Entorno/Construcciones/Casa"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Entorno/Construcciones/Casa/Area3D"]
+transform = Transform3D(1, 0, 1.11759e-08, 0, 1, 0, -3.76999e-06, 0, 0.999999, 4.88122, 4.58913, -3.8502)
+shape = SubResource("BoxShape3D_syf7j")
+
+[node name="Escuela_Frente (1)2" parent="Entorno/Construcciones" instance=ExtResource("10_5lbaf")]
+transform = Transform3D(-3.99984, 0, -0.0358144, 0, 4, 0, 0.0358144, 0, -3.99984, -11.4025, 14.3699, -7.79043)
+
+[node name="escuela" type="Area3D" parent="Entorno/Construcciones/Escuela_Frente (1)2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.87665, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Entorno/Construcciones/Escuela_Frente (1)2/escuela"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.09959, 4.15924, 0.66967)
+shape = SubResource("BoxShape3D_vblcf")
+
+[node name="Dinobucks" parent="Entorno/Construcciones" instance=ExtResource("10_84ukn")]
+transform = Transform3D(-3.99994, 0, 0.0217809, 0, 4, 0, -0.0217809, 0, -3.99994, 60.7102, 18.2945, 70.1816)
+
+[node name="joselineTienda (1)" parent="Entorno/Construcciones" instance=ExtResource("12_ewfuk")]
+transform = Transform3D(0.0141019, 0, 0.999901, 0, 1, 0, -0.999901, 0, 0.0141019, -67.2592, 19.6732, 63.9151)
+
+[node name="large_buildingG2" parent="Entorno/Construcciones" instance=ExtResource("12_yf7ds")]
+transform = Transform3D(-29.9982, 0, -0.332477, 0, 30, 0, 0.332477, 0, -29.9982, -75.3365, 32.1296, 144.28)
+visible = false
+
+[node name="edificio (3)" parent="Entorno/Construcciones" instance=ExtResource("14_w05dh")]
+transform = Transform3D(-3.99999, 0, 0.00935473, 0, 4, 0, -0.00935473, 0, -3.99999, -10.8522, 18.4522, 67.8345)
+
+[node name="Area3D" type="Area3D" parent="Entorno/Construcciones/edificio (3)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Entorno/Construcciones/edificio (3)/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.570425, 17.5286, 0.942936)
+shape = SubResource("BoxShape3D_hk8x4")
+
+[node name="stopsign3" parent="Entorno/Construcciones" instance=ExtResource("15_vblcf")]
+transform = Transform3D(0.0540613, 0, 0.998538, 0, 1, 0, -0.998538, 0, 0.0540613, -60.1004, 22.3836, -23.5099)
+
+[node name="sedan-sports" parent="Entorno/Construcciones" instance=ExtResource("16_hk8x4")]
+transform = Transform3D(0.130695, 0, 3.49756, 0, 3.5, 0, -3.49756, 0, 0.130695, -65.3796, 19.747, -29.4703)
+
+[node name="cruce" type="Area3D" parent="Entorno/Construcciones/sedan-sports"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Entorno/Construcciones/sedan-sports/cruce"]
+transform = Transform3D(1, 0, 1.49012e-08, 0, 1.00006, 0, -1.49012e-08, 0, 1, 0.641356, 0.572768, 0.0804081)
+shape = SubResource("BoxShape3D_bi0k3")
+
+[node name="Malla" type="Node3D" parent="Entorno"]
+
+[node name="GridMap" type="GridMap" parent="Entorno/Malla"]
+transform = Transform3D(5, 0, 0, 0, 11.7618, 0, 0, 0, 5, 21.2883, -1.10771, 0.00565703)
+mesh_library = ExtResource("2_g8a5c")
+cell_size = Vector3(1, 0.5, 1)
+cell_scale = 4.0
+data = {
+"cells": PackedInt32Array(5, 65511, 208, 1, 65511, 208, 65533, 65511, 208, 65529, 65511, 208, 65526, 65511, 208, 13, 65511, 158, 9, 65511, 161, 13, 65515, 1441953, 13, 65519, 1442000, 13, 65523, 1441973, 13, 65527, 1442000, 13, 65530, 1441999, 13, 65533, 1441991, 65520, 65513, 1048746, 65549, 65527, 1441999, 65549, 65526, 1441999, 65549, 65528, 1441999, 65549, 65531, 1441991, 196621, 65535, 1442000, 196621, 3, 1442000, 196621, 7, 1441973, 131057, 65521, 1441991, 262129, 65525, 1442000, 262129, 65529, 1441956, 262133, 65529, 655568, 262125, 65529, 655568, 262121, 65529, 655568, 262143, 65531, 170, 196609, 1, 1442000, 196609, 4, 1441999, 196617, 7, 655568, 196613, 7, 655568, 196609, 7, 655524, 262129, 65533, 1442000, 262129, 1, 1442000, 262129, 4, 1441999, 262141, 7, 208, 262137, 7, 208, 262133, 7, 208, 262125, 7, 180, 262129, 11, 1442000, 196609, 11, 1442000, 196609, 15, 1442000, 262121, 7, 180, 262117, 7, 655568, 262137, 65529, 655521, 262115, 65531, 1048746, 262113, 1, 1048784, 262113, 4, 1048783, 262129, 7, 1048740, 262125, 10, 1048783, 262121, 10, 1048783, 262113, 11, 1442000, 262113, 15, 1442000, 65549, 65523, 1442000, 262133, 19, 208, 262129, 15, 1442000, 262137, 19, 655568, 262141, 19, 655568, 196613, 19, 655568, 196617, 19, 655568, 262129, 19, 655541, 196609, 19, 655541, 196621, 11, 1048784, 196621, 15, 1048784, 196621, 19, 1441951, 262112, 20, 1179828, 262114, 18, 1179828, 262112, 17, 524468, 262113, 19, 655519, 262117, 19, 655568, 262121, 19, 655568, 262125, 19, 208, 131057, 65515, 1048735, 131061, 65515, 208, 131065, 65515, 655568, 131069, 65515, 655568, 65537, 65515, 655568, 65541, 65515, 655568, 131057, 65518, 1441999, 65545, 65515, 655521, 65549, 65516, 131231, 65549, 65515, 159, 65548, 65516, 131231, 65549, 65517, 131231, 65549, 65519, 1441953, 262113, 7, 1048757)
+}
+metadata/_editor_floor_ = Vector3(0, 3, 0)
+
+[node name="Camara" type="Node3D" parent="."]
+transform = Transform3D(-48.4292, 7.13083, -10.1864, -0.252813, 40.3878, 29.4747, 12.4317, 28.6002, -39.083, -119.791, 200.285, -232.389)
+
+[node name="Camera3D" type="Camera3D" parent="Camara"]
+transform = Transform3D(0.0859457, -0.000658258, 0.00603907, 0.00189734, 0.0198745, 0.00805923, -0.00803348, -0.00234843, 0.0665114, 0.236292, 0.375017, -0.867102)
+
+[node name="Control" parent="Camara/Camera3D" instance=ExtResource("17_7dq3s")]
+
+[connection signal="input_event" from="Entorno/Construcciones/Casa/Area3D" to="." method="_on_area_3d_input_event"]
+[connection signal="input_event" from="Entorno/Construcciones/sedan-sports/cruce" to="." method="_on_cruce_input_event"]

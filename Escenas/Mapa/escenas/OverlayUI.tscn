@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1aky0gb05vhy"]
+
+[ext_resource type="Texture2D" uid="uid://b636udojskrid" path="res://Dtafalonso-Android-Lollipop-Settings.48.png" id="1_ck1va"]
+[ext_resource type="Script" uid="uid://csepf173fr2yt" path="res://scrips/OverlayUIScript.gd" id="2_feogh"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -574.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -56.0
+offset_bottom = 56.0
+grow_horizontal = 0
+icon = ExtResource("1_ck1va")
+script = ExtResource("2_feogh")
+
+[node name="Window" type="Window" parent="CanvasLayer/Button"]
+initial_position = 2
+size = Vector2i(300, 200)
+visible = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Button/Window"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Button/Window/VBoxContainer"]
+layout_mode = 2
+text = "Menu de opciones"
+horizontal_alignment = 1
+
+[node name="ContinerVolumenFX" type="HBoxContainer" parent="CanvasLayer/Button/Window/VBoxContainer"]
+layout_mode = 2
+
+[node name="LabelFX" type="Label" parent="CanvasLayer/Button/Window/VBoxContainer/ContinerVolumenFX"]
+layout_mode = 2
+text = "Volumen Efectos"
+
+[node name="SliderFX" type="HSlider" parent="CanvasLayer/Button/Window/VBoxContainer/ContinerVolumenFX"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ContinerVolumenMusic" type="HBoxContainer" parent="CanvasLayer/Button/Window/VBoxContainer"]
+layout_mode = 2
+
+[node name="LabelMusic" type="Label" parent="CanvasLayer/Button/Window/VBoxContainer/ContinerVolumenMusic"]
+layout_mode = 2
+text = "Volumen Musica"
+
+[node name="SliderMusic" type="HSlider" parent="CanvasLayer/Button/Window/VBoxContainer/ContinerVolumenMusic"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 3

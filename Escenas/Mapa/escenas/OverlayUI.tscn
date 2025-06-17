@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://c1aky0gb05vhy"]
+[gd_scene load_steps=5 format=3 uid="uid://c1aky0gb05vhy"]
 
-[ext_resource type="Texture2D" uid="uid://b636udojskrid" path="res://Dtafalonso-Android-Lollipop-Settings.48.png" id="1_ck1va"]
-[ext_resource type="Script" uid="uid://csepf173fr2yt" path="res://scrips/OverlayUIScript.gd" id="2_feogh"]
+[ext_resource type="Texture2D" uid="uid://bmoruwe061kb1" path="res://src/image/Dtafalonso-Android-Lollipop-Settings.48.png" id="1_ck1va"]
+[ext_resource type="Script" uid="uid://d4ji1tj3m1ple" path="res://Escenas/Mapa/scrips/overlay_ui.gd" id="1_ov3xn"]
+[ext_resource type="Script" uid="uid://csepf173fr2yt" path="res://Escenas/Mapa/scrips/OverlayUIScript.gd" id="2_feogh"]
+[ext_resource type="Texture2D" uid="uid://dc4bkmr8o1y7w" path="res://src/image/Enciclopedia2.png" id="4_yqtbk"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -11,6 +13,7 @@ anchor_bottom = 1.0
 offset_bottom = -574.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ov3xn")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -60,3 +63,14 @@ text = "Volumen Musica"
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer"]
+offset_left = 21.0
+offset_top = 15.0
+offset_right = 499.0
+offset_bottom = 370.0
+scale = Vector2(0.12, 0.12)
+texture_normal = ExtResource("4_yqtbk")
+stretch_mode = 0
+
+[connection signal="pressed" from="CanvasLayer/TextureButton" to="." method="_on_texture_button_pressed"]

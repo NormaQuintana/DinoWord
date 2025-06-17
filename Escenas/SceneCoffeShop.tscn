@@ -1,0 +1,259 @@
+[gd_scene load_steps=4 format=3 uid="uid://5hvv8w2xcmrg"]
+
+[ext_resource type="Script" uid="uid://c06nigolbn7r6" path="res://Scripts/ScriptCoffeeShop.gd" id="1_sird1"]
+[ext_resource type="Texture2D" uid="uid://cxj3vyyaypw3x" path="res://src/image/Fondo.png" id="2_y30iq"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w2rde"]
+texture = ExtResource("2_y30iq")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_sird1")
+
+[node name="Panel7" type="Panel" parent="."]
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 1535.0
+offset_bottom = 861.0
+scale = Vector2(0.75, 0.75)
+theme_override_styles/panel = SubResource("StyleBoxTexture_w2rde")
+
+[node name="Label" type="Label" parent="Panel7"]
+layout_mode = 0
+offset_left = 254.0
+offset_top = 45.0
+offset_right = 794.0
+offset_bottom = 200.0
+theme_override_font_sizes/font_size = 70
+text = "Cafeteria"
+
+[node name="Panel" type="Panel" parent="Panel7"]
+layout_mode = 0
+offset_left = 1111.0
+offset_top = 139.0
+offset_right = 1437.0
+offset_bottom = 459.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 57.333
+offset_top = 182.0
+offset_right = 209.333
+offset_bottom = 306.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button2" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 207.333
+offset_top = 183.0
+offset_right = 359.333
+offset_bottom = 307.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button3" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 360.333
+offset_top = 183.0
+offset_right = 512.333
+offset_bottom = 307.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button4" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 57.333
+offset_top = 351.667
+offset_right = 209.333
+offset_bottom = 475.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button5" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 207.333
+offset_top = 351.667
+offset_right = 359.333
+offset_bottom = 475.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button6" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 360.333
+offset_top = 351.667
+offset_right = 512.333
+offset_bottom = 475.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button7" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 57.333
+offset_top = 532.667
+offset_right = 209.333
+offset_bottom = 656.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button8" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 207.333
+offset_top = 532.667
+offset_right = 359.333
+offset_bottom = 656.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button9" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 360.333
+offset_top = 532.667
+offset_right = 512.333
+offset_bottom = 656.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button10" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 57.333
+offset_top = 700.0
+offset_right = 209.333
+offset_bottom = 824.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button11" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 207.333
+offset_top = 700.0
+offset_right = 359.333
+offset_bottom = 824.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button12" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 360.333
+offset_top = 700.0
+offset_right = 512.333
+offset_bottom = 824.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button13" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 513.333
+offset_top = 700.0
+offset_right = 665.333
+offset_bottom = 824.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button14" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 666.333
+offset_top = 700.0
+offset_right = 818.333
+offset_bottom = 824.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button15" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 513.333
+offset_top = 351.667
+offset_right = 665.333
+offset_bottom = 475.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button16" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 666.333
+offset_top = 351.667
+offset_right = 818.333
+offset_bottom = 475.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button17" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 819.333
+offset_top = 351.667
+offset_right = 971.333
+offset_bottom = 475.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button18" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 969.333
+offset_top = 351.667
+offset_right = 1121.33
+offset_bottom = 475.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button19" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 819.333
+offset_top = 700.0
+offset_right = 971.333
+offset_bottom = 824.0
+scale = Vector2(0.75, 0.75)
+
+[node name="ButtonBack" type="Button" parent="Panel7"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 37.0
+offset_right = 91.0
+offset_bottom = 68.0
+text = "Back
+"
+
+[node name="Button20" type="Button" parent="Panel7"]
+offset_left = 513.333
+offset_top = 183.417
+offset_right = 665.333
+offset_bottom = 307.417
+scale = Vector2(0.75, 0.75)
+
+[node name="Button21" type="Button" parent="Panel7"]
+offset_left = 666.333
+offset_top = 183.417
+offset_right = 818.333
+offset_bottom = 307.417
+scale = Vector2(0.75, 0.75)
+
+[node name="Button22" type="Button" parent="Panel7"]
+offset_left = 819.333
+offset_top = 183.417
+offset_right = 971.333
+offset_bottom = 307.417
+scale = Vector2(0.75, 0.75)
+
+[node name="Button23" type="Button" parent="Panel7"]
+offset_left = 969.333
+offset_top = 182.667
+offset_right = 1121.33
+offset_bottom = 306.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button24" type="Button" parent="Panel7"]
+offset_left = 969.333
+offset_top = 700.0
+offset_right = 1121.33
+offset_bottom = 824.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button25" type="Button" parent="Panel7"]
+offset_left = 513.333
+offset_top = 532.667
+offset_right = 665.333
+offset_bottom = 656.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button26" type="Button" parent="Panel7"]
+offset_left = 666.333
+offset_top = 532.667
+offset_right = 818.333
+offset_bottom = 656.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button27" type="Button" parent="Panel7"]
+offset_left = 819.333
+offset_top = 532.667
+offset_right = 971.333
+offset_bottom = 656.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button28" type="Button" parent="Panel7"]
+offset_left = 969.333
+offset_top = 532.667
+offset_right = 1121.33
+offset_bottom = 656.667
+scale = Vector2(0.75, 0.75)

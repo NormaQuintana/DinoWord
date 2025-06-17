@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5n2ayab8fhvp"
 path.s3tc="res://.godot/imported/Escuela_Frente (1)_Bandera_Mexico.png-c566baae412dd0c1fe79ce6d8c49ac3d.s3tc.ctex"
+path.etc2="res://.godot/imported/Escuela_Frente (1)_Bandera_Mexico.png-c566baae412dd0c1fe79ce6d8c49ac3d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Escenas/Mapa/Modelos interactivos/Escuela_Frente (1)_Bandera_Mexico.png"
-dest_files=["res://.godot/imported/Escuela_Frente (1)_Bandera_Mexico.png-c566baae412dd0c1fe79ce6d8c49ac3d.s3tc.ctex"]
+dest_files=["res://.godot/imported/Escuela_Frente (1)_Bandera_Mexico.png-c566baae412dd0c1fe79ce6d8c49ac3d.s3tc.ctex", "res://.godot/imported/Escuela_Frente (1)_Bandera_Mexico.png-c566baae412dd0c1fe79ce6d8c49ac3d.etc2.ctex"]
 
 [params]
 

@@ -11,10 +11,28 @@ config_version=5
 [application]
 
 config/name="DinoWords:DefensaExtinta"
-run/main_scene="uid://buwp5jka236t8"
+run/main_scene="uid://bn3oc7flm6il3"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GlobalData="*res://GlobalData.gd"
+Firebase="*res://addons/godot-firebase/firebase/firebase.tscn"
+GlobalState="*res://Scripts/GlobalState.gd"
+PlayerData="*res://Scripts/PlayerData.gd"
+FirebaseManager="*res://Scripts/FirebaseManager.gd"
+
+[display]
+
+window/stretch/mode="viewport"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot-firebase/plugin.cfg", "res://addons/http-sse-client/plugin.cfg")
 
 [rendering]
 
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
+2d/snap/snap_2d_transforms_to_pixel=true

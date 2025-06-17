@@ -38,6 +38,8 @@ func _on_body_exited(body):
 func _romper_huevo():
 	if animated_sprite:
 		animated_sprite.play("break")
+		await get_tree().create_timer(0.8).timeout
+
 	set_physics_process(false)
 	print("¡Huevo roto!")
-	queue_free() 
+	queue_free()

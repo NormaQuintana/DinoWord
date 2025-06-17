@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b151ayvc1ucm2"
 path.s3tc="res://.godot/imported/joselineTienda (1)_icon.png-508bbe1264c4de4f4375684b5d041722.s3tc.ctex"
+path.etc2="res://.godot/imported/joselineTienda (1)_icon.png-508bbe1264c4de4f4375684b5d041722.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Escenas/Mapa/Modelos interactivos/joselineTienda (1)_icon.png"
-dest_files=["res://.godot/imported/joselineTienda (1)_icon.png-508bbe1264c4de4f4375684b5d041722.s3tc.ctex"]
+dest_files=["res://.godot/imported/joselineTienda (1)_icon.png-508bbe1264c4de4f4375684b5d041722.s3tc.ctex", "res://.godot/imported/joselineTienda (1)_icon.png-508bbe1264c4de4f4375684b5d041722.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://prxuokofqf3s"
 path.s3tc="res://.godot/imported/joselineTiendaCOPIAVENTANAS_icon.png-ec226d9f9c3bca3a52da31ea7710906e.s3tc.ctex"
+path.etc2="res://.godot/imported/joselineTiendaCOPIAVENTANAS_icon.png-ec226d9f9c3bca3a52da31ea7710906e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Escenas/Mapa/Modelos interactivos/joselineTiendaCOPIAVENTANAS_icon.png"
-dest_files=["res://.godot/imported/joselineTiendaCOPIAVENTANAS_icon.png-ec226d9f9c3bca3a52da31ea7710906e.s3tc.ctex"]
+dest_files=["res://.godot/imported/joselineTiendaCOPIAVENTANAS_icon.png-ec226d9f9c3bca3a52da31ea7710906e.s3tc.ctex", "res://.godot/imported/joselineTiendaCOPIAVENTANAS_icon.png-ec226d9f9c3bca3a52da31ea7710906e.etc2.ctex"]
 
 [params]
 

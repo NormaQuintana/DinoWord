@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5rp8thb5d3ga"
 path.s3tc="res://.godot/imported/colormap.png-e737655d45f5229ebfeedb2a1b7c01c7.s3tc.ctex"
+path.etc2="res://.godot/imported/colormap.png-e737655d45f5229ebfeedb2a1b7c01c7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Escenas/Mapa/terreno/complemento Calles/Models/FBX format/Textures/colormap.png"
-dest_files=["res://.godot/imported/colormap.png-e737655d45f5229ebfeedb2a1b7c01c7.s3tc.ctex"]
+dest_files=["res://.godot/imported/colormap.png-e737655d45f5229ebfeedb2a1b7c01c7.s3tc.ctex", "res://.godot/imported/colormap.png-e737655d45f5229ebfeedb2a1b7c01c7.etc2.ctex"]
 
 [params]
 

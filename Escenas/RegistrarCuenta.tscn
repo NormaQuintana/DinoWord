@@ -1,0 +1,239 @@
+[gd_scene load_steps=12 format=3 uid="uid://cjf854jp6gbyv"]
+
+[ext_resource type="Texture2D" uid="uid://djfcpn40h51iq" path="res://src/image/dinosaurio.png" id="1_h5mpr"]
+[ext_resource type="Script" uid="uid://cibm4xswsensk" path="res://Scripts/registrar_cuenta.gd" id="1_onx2d"]
+[ext_resource type="Texture2D" uid="uid://1r0rxdggmmor" path="res://src/image/invisible.png" id="1_qb4kc"]
+[ext_resource type="Texture2D" uid="uid://e35x7w3ve8gx" path="res://src/image/estegosaurio.png" id="3_tkf05"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rwm1l"]
+bg_color = Color(1, 0.698039, 0.172549, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="FontFile" id="FontFile_05e1n"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mkjud"]
+content_margin_left = 20.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vjjkh"]
+content_margin_left = 20.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gedy8"]
+content_margin_left = 20.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fplsl"]
+bg_color = Color(0.14902, 0.27451, 0.32549, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_onx2d"]
+bg_color = Color(0.14902, 0.27451, 0.32549, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_right = 1.175
+anchor_bottom = 1.319
+offset_top = -3.0
+offset_right = -187.6
+offset_bottom = -202.712
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_onx2d")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.832
+anchor_bottom = 0.737
+offset_left = -1.0
+offset_top = 4.0
+offset_right = 193.888
+offset_bottom = 168.265
+theme_override_styles/panel = SubResource("StyleBoxFlat_rwm1l")
+
+[node name="Estegosaurio" type="Sprite2D" parent="Panel"]
+position = Vector2(1031.38, 84.875)
+scale = Vector2(0.311035, 0.285644)
+texture = ExtResource("3_tkf05")
+
+[node name="Dinosaurio" type="Sprite2D" parent="Panel"]
+position = Vector2(152, 90)
+scale = Vector2(0.25, 0.236328)
+texture = ExtResource("1_h5mpr")
+
+[node name="Titulo de la pagina" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -346.5
+offset_top = 6.0
+offset_right = 353.5
+offset_bottom = 89.0
+grow_horizontal = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 60
+text = "Registrar Cuenta"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -349.5
+offset_top = -219.5
+offset_right = 350.5
+offset_bottom = 210.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="UserName" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 30
+text = "Nombre para tu DinoUsuario"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="UserNameText" type="LineEdit" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(600, 50)
+layout_mode = 2
+theme_override_colors/font_placeholder_color = Color(0.724643, 0.724643, 0.724642, 1)
+theme_override_colors/font_color = Color(0.352941, 0.352941, 0.352941, 1)
+theme_override_fonts/font = SubResource("FontFile_05e1n")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_mkjud")
+placeholder_text = "Escribe tu nombre de usuario"
+
+[node name="Password" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 30
+text = "Contraseña"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PasswordText" type="LineEdit" parent="Panel/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+theme_override_colors/font_placeholder_color = Color(0.72549, 0.72549, 0.72549, 1)
+theme_override_colors/font_color = Color(0.352941, 0.352941, 0.352941, 1)
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_vjjkh")
+placeholder_text = "Escribe una constraseña (debe contar con más de 6 caractéres)"
+secret = true
+
+[node name="TextureButton" type="TextureButton" parent="Panel/VBoxContainer/PasswordText"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -20.0
+offset_right = -6.5
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 2
+texture_normal = ExtResource("1_qb4kc")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Email" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 30
+text = "Correo electrónico"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EmailText" type="LineEdit" parent="Panel/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+theme_override_colors/font_placeholder_color = Color(0.72549, 0.72549, 0.72549, 1)
+theme_override_colors/font_color = Color(0.352941, 0.352941, 0.352941, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_gedy8")
+placeholder_text = "Escribe tu correo electrónico"
+
+[node name="RegistrarButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -110.0
+offset_right = 150.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_fplsl")
+text = "Registrarme"
+
+[node name="Error" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+top_level = true
+layout_mode = 0
+offset_left = 242.0
+offset_top = 504.0
+offset_right = 924.0
+offset_bottom = 527.0
+text = "error mensaje"
+horizontal_alignment = 1
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 25.0
+offset_right = 138.0
+offset_bottom = 65.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_onx2d")
+text = "Atrás"
+
+[connection signal="pressed" from="RegistrarButton" to="." method="_on_registrar_button_pressed"]

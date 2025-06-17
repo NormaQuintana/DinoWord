@@ -1,0 +1,269 @@
+[gd_scene load_steps=4 format=3 uid="uid://ygmvgoc6x382"]
+
+[ext_resource type="Script" uid="uid://dq8hchixgutgj" path="res://Scripts/ScriptOfficeEnciclopedia.gd" id="1_dey7h"]
+[ext_resource type="Texture2D" uid="uid://cxj3vyyaypw3x" path="res://src/image/Fondo.png" id="2_cf0y6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xf7ql"]
+texture = ExtResource("2_cf0y6")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_dey7h")
+
+[node name="Panel3" type="Panel" parent="."]
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 1535.0
+offset_bottom = 861.0
+scale = Vector2(0.75, 0.75)
+theme_override_styles/panel = SubResource("StyleBoxTexture_xf7ql")
+
+[node name="ButtonBack" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 13.0
+offset_right = 160.0
+offset_bottom = 78.0
+scale = Vector2(0.75, 0.75)
+text = "back"
+
+[node name="Label" type="Label" parent="Panel3"]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 45.3333
+offset_right = 921.0
+offset_bottom = 200.333
+scale = Vector2(0.75, 0.75)
+theme_override_font_sizes/font_size = 70
+text = "Office"
+
+[node name="Panel" type="Panel" parent="Panel3"]
+layout_mode = 0
+offset_left = 1173.0
+offset_top = 139.0
+offset_right = 1499.0
+offset_bottom = 459.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 57.333
+offset_top = 182.667
+offset_right = 209.333
+offset_bottom = 306.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button2" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 207.333
+offset_top = 182.667
+offset_right = 359.333
+offset_bottom = 306.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button3" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 360.333
+offset_top = 182.667
+offset_right = 512.333
+offset_bottom = 306.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button4" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 57.333
+offset_top = 351.667
+offset_right = 209.333
+offset_bottom = 475.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button5" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 207.333
+offset_top = 351.667
+offset_right = 359.333
+offset_bottom = 475.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button6" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 360.333
+offset_top = 351.667
+offset_right = 512.333
+offset_bottom = 475.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button7" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 57.333
+offset_top = 532.667
+offset_right = 209.333
+offset_bottom = 656.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button8" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 207.333
+offset_top = 532.667
+offset_right = 359.333
+offset_bottom = 656.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button9" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 360.333
+offset_top = 532.667
+offset_right = 512.333
+offset_bottom = 656.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button10" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 57.333
+offset_top = 700.0
+offset_right = 209.333
+offset_bottom = 824.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button11" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 207.333
+offset_top = 700.0
+offset_right = 359.333
+offset_bottom = 824.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button12" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 360.333
+offset_top = 700.0
+offset_right = 512.333
+offset_bottom = 824.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button13" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 513.333
+offset_top = 700.0
+offset_right = 665.333
+offset_bottom = 824.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button14" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 666.333
+offset_top = 700.0
+offset_right = 818.333
+offset_bottom = 824.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button15" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 513.333
+offset_top = 532.667
+offset_right = 665.333
+offset_bottom = 656.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button16" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 666.333
+offset_top = 532.667
+offset_right = 818.333
+offset_bottom = 656.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button17" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 819.333
+offset_top = 532.667
+offset_right = 971.333
+offset_bottom = 656.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button18" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 969.333
+offset_top = 532.667
+offset_right = 1121.33
+offset_bottom = 656.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button19" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 819.333
+offset_top = 700.0
+offset_right = 971.333
+offset_bottom = 824.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button20" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 513.333
+offset_top = 182.667
+offset_right = 665.333
+offset_bottom = 306.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button21" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 666.333
+offset_top = 182.667
+offset_right = 818.333
+offset_bottom = 306.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button22" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 819.333
+offset_top = 182.667
+offset_right = 971.333
+offset_bottom = 306.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button23" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 969.333
+offset_top = 182.667
+offset_right = 1121.33
+offset_bottom = 306.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button24" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 969.333
+offset_top = 700.0
+offset_right = 1121.33
+offset_bottom = 824.0
+scale = Vector2(0.75, 0.75)
+
+[node name="Button25" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 513.333
+offset_top = 351.667
+offset_right = 665.333
+offset_bottom = 475.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button26" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 666.333
+offset_top = 351.667
+offset_right = 818.333
+offset_bottom = 475.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button27" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 819.333
+offset_top = 351.667
+offset_right = 971.333
+offset_bottom = 475.667
+scale = Vector2(0.75, 0.75)
+
+[node name="Button28" type="Button" parent="Panel3"]
+layout_mode = 0
+offset_left = 969.333
+offset_top = 351.667
+offset_right = 1121.33
+offset_bottom = 475.667
+scale = Vector2(0.75, 0.75)

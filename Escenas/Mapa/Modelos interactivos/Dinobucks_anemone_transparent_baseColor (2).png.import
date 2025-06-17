@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2tk3xfxgyd52"
 path.s3tc="res://.godot/imported/Dinobucks_anemone_transparent_baseColor (2).png-62e5d328d6e66f78b78d6d6e66ccc369.s3tc.ctex"
+path.etc2="res://.godot/imported/Dinobucks_anemone_transparent_baseColor (2).png-62e5d328d6e66f78b78d6d6e66ccc369.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Escenas/Mapa/Modelos interactivos/Dinobucks_anemone_transparent_baseColor (2).png"
-dest_files=["res://.godot/imported/Dinobucks_anemone_transparent_baseColor (2).png-62e5d328d6e66f78b78d6d6e66ccc369.s3tc.ctex"]
+dest_files=["res://.godot/imported/Dinobucks_anemone_transparent_baseColor (2).png-62e5d328d6e66f78b78d6d6e66ccc369.s3tc.ctex", "res://.godot/imported/Dinobucks_anemone_transparent_baseColor (2).png-62e5d328d6e66f78b78d6d6e66ccc369.etc2.ctex"]
 
 [params]
 

@@ -1,23 +1,23 @@
 [gd_scene load_steps=30 format=3 uid="uid://c57j8kk4h0e4e"]
 
-[ext_resource type="Shader" uid="uid://cngq07g76wa7l" path="res://mundo.gdshader" id="1_gkpbq"]
-[ext_resource type="Script" uid="uid://cectcb3i57cu8" path="res://scrips/mundo.gd" id="1_syf7j"]
-[ext_resource type="MeshLibrary" uid="uid://dfdmd68peu4yd" path="res://terreno/modelos.tres" id="2_g8a5c"]
-[ext_resource type="AudioStream" uid="uid://db63ty2xd6h7r" path="res://Music/Woody Path.mp3" id="2_vblcf"]
-[ext_resource type="PackedScene" uid="uid://djgm4up7p6hui" path="res://terreno/complemento Terrenos/Models/FBX format/patch-sand.fbx" id="3_6eh68"]
-[ext_resource type="PackedScene" uid="uid://l66ra4gqr16e" path="res://terreno/complemento Terrenos/Models/FBX format/patch-grass.fbx" id="4_qatul"]
-[ext_resource type="PackedScene" uid="uid://bglvbpsbupu6d" path="res://terreno/complemento Terrenos/Models/FBX format/rocks-a.fbx" id="5_jgiah"]
-[ext_resource type="PackedScene" uid="uid://dx5dqjk6087vd" path="res://terreno/complemento Terrenos/Models/FBX format/rocks-b.fbx" id="6_ntaqy"]
-[ext_resource type="PackedScene" uid="uid://cmf00mfy4e01q" path="res://terreno/complemento Terrenos/Models/FBX format/rocks-c.fbx" id="7_p8fee"]
-[ext_resource type="PackedScene" uid="uid://f6q67q1gmscn" path="res://Modelos interactivos/Casa.fbx" id="8_rvffb"]
-[ext_resource type="PackedScene" uid="uid://cqm4tsoonxb65" path="res://Modelos interactivos/Escuela_Frente (1).glb" id="10_5lbaf"]
-[ext_resource type="PackedScene" uid="uid://dgjn2hhv3ukcg" path="res://Modelos interactivos/Dinobucks.glb" id="10_84ukn"]
-[ext_resource type="PackedScene" uid="uid://b3ckg0lh7pnhp" path="res://Modelos interactivos/joselineTienda (1).glb" id="12_ewfuk"]
-[ext_resource type="PackedScene" uid="uid://i5neq5wwy0i6" path="res://terreno/complemento Edificios/Models/GLTF format/large_buildingG.glb" id="12_yf7ds"]
-[ext_resource type="PackedScene" uid="uid://ddvfb45ap2h4b" path="res://Modelos interactivos/edificio (3).glb" id="14_w05dh"]
-[ext_resource type="PackedScene" uid="uid://c5tp0q4sbs05x" path="res://terreno/complemento Calles/stopsign3.glb" id="15_vblcf"]
-[ext_resource type="PackedScene" uid="uid://dubsd36yo3m1h" path="res://terreno/complemento Autos/Models/GLB format/sedan-sports.glb" id="16_hk8x4"]
-[ext_resource type="PackedScene" uid="uid://c1aky0gb05vhy" path="res://escenas/OverlayUI.tscn" id="17_7dq3s"]
+[ext_resource type="Shader" uid="uid://cngq07g76wa7l" path="res://Escenas/Mapa/mundo.gdshader" id="1_gkpbq"]
+[ext_resource type="Script" uid="uid://cectcb3i57cu8" path="res://Escenas/Mapa/scrips/mundo.gd" id="1_syf7j"]
+[ext_resource type="MeshLibrary" uid="uid://dfdmd68peu4yd" path="res://Escenas/Mapa/terreno/modelos.tres" id="2_g8a5c"]
+[ext_resource type="AudioStream" uid="uid://db63ty2xd6h7r" path="res://Escenas/Mapa/Music/Woody Path.mp3" id="2_vblcf"]
+[ext_resource type="PackedScene" uid="uid://djgm4up7p6hui" path="res://Escenas/Mapa/terreno/complemento Terrenos/Models/FBX format/patch-sand.fbx" id="3_6eh68"]
+[ext_resource type="PackedScene" uid="uid://l66ra4gqr16e" path="res://Escenas/Mapa/terreno/complemento Terrenos/Models/FBX format/patch-grass.fbx" id="4_qatul"]
+[ext_resource type="PackedScene" uid="uid://bglvbpsbupu6d" path="res://Escenas/Mapa/terreno/complemento Terrenos/Models/FBX format/rocks-a.fbx" id="5_jgiah"]
+[ext_resource type="PackedScene" uid="uid://dx5dqjk6087vd" path="res://Escenas/Mapa/terreno/complemento Terrenos/Models/FBX format/rocks-b.fbx" id="6_ntaqy"]
+[ext_resource type="PackedScene" uid="uid://cmf00mfy4e01q" path="res://Escenas/Mapa/terreno/complemento Terrenos/Models/FBX format/rocks-c.fbx" id="7_p8fee"]
+[ext_resource type="PackedScene" uid="uid://f6q67q1gmscn" path="res://Escenas/Mapa/Modelos interactivos/Casa.fbx" id="8_rvffb"]
+[ext_resource type="PackedScene" uid="uid://cqm4tsoonxb65" path="res://Escenas/Mapa/Modelos interactivos/Escuela_Frente (1).glb" id="10_5lbaf"]
+[ext_resource type="PackedScene" uid="uid://dgjn2hhv3ukcg" path="res://Escenas/Mapa/Modelos interactivos/Dinobucks.glb" id="10_84ukn"]
+[ext_resource type="PackedScene" uid="uid://b3ckg0lh7pnhp" path="res://Escenas/Mapa/Modelos interactivos/joselineTienda (1).glb" id="12_ewfuk"]
+[ext_resource type="PackedScene" uid="uid://i5neq5wwy0i6" path="res://Escenas/Mapa/terreno/complemento Edificios/Models/GLTF format/large_buildingG.glb" id="12_yf7ds"]
+[ext_resource type="PackedScene" uid="uid://ddvfb45ap2h4b" path="res://Escenas/Mapa/Modelos interactivos/edificio (3).glb" id="14_w05dh"]
+[ext_resource type="PackedScene" uid="uid://b64e2dhm70h64" path="res://src/niidea/stopsign3.glb" id="15_vblcf"]
+[ext_resource type="PackedScene" uid="uid://dubsd36yo3m1h" path="res://Escenas/Mapa/terreno/complemento Autos/Models/GLB format/sedan-sports.glb" id="16_hk8x4"]
+[ext_resource type="PackedScene" uid="uid://c1aky0gb05vhy" path="res://Escenas/Mapa/escenas/OverlayUI.tscn" id="17_7dq3s"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_a6y7u"]
 
@@ -68,13 +68,13 @@ shader_parameter/wave_speed = 1.0
 size = Vector3(13.536, 8.92307, 13.5871)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vblcf"]
-size = Vector3(11.6691, 5.18356, 6.83496)
+size = Vector3(10.112, 8.67491, 6.83496)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hk8x4"]
 size = Vector3(13.627, 30.8701, 10.5931)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_bi0k3"]
-size = Vector3(4.94336, 2.14551, 5.93853)
+[sub_resource type="BoxShape3D" id="BoxShape3D_petfo"]
+size = Vector3(1, 1.68701, 2.70502)
 
 [node name="Mundo" type="Node3D"]
 script = ExtResource("1_syf7j")
@@ -167,9 +167,9 @@ transform = Transform3D(-7.4753, 0, 18.5505, 0, 5, 0, -18.5505, 0, -7.4753, -302
 [node name="Casa" parent="Entorno/Construcciones" instance=ExtResource("8_rvffb")]
 transform = Transform3D(-2.49894, 0, -0.0648718, 0, 3.328, 0, 0.0727263, 0, -2.22906, 74.6328, 6.38529, -88.7497)
 
-[node name="Area3D" type="Area3D" parent="Entorno/Construcciones/Casa"]
+[node name="CasaArea3D" type="Area3D" parent="Entorno/Construcciones/Casa"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Entorno/Construcciones/Casa/Area3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Entorno/Construcciones/Casa/CasaArea3D"]
 transform = Transform3D(1, 0, 1.11759e-08, 0, 1, 0, -3.76999e-06, 0, 0.999999, 4.88122, 4.58913, -3.8502)
 shape = SubResource("BoxShape3D_syf7j")
 
@@ -180,7 +180,7 @@ transform = Transform3D(-3.99984, 0, -0.0358144, 0, 4, 0, 0.0358144, 0, -3.99984
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.87665, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Entorno/Construcciones/Escuela_Frente (1)2/escuela"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.09959, 4.15924, 0.66967)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.87813, 5.90491, 0.66967)
 shape = SubResource("BoxShape3D_vblcf")
 
 [node name="Dinobucks" parent="Entorno/Construcciones" instance=ExtResource("10_84ukn")]
@@ -188,6 +188,11 @@ transform = Transform3D(-3.99994, 0, 0.0217809, 0, 4, 0, -0.0217809, 0, -3.99994
 
 [node name="joselineTienda (1)" parent="Entorno/Construcciones" instance=ExtResource("12_ewfuk")]
 transform = Transform3D(0.0141019, 0, 0.999901, 0, 1, 0, -0.999901, 0, 0.0141019, -67.2592, 19.6732, 63.9151)
+
+[node name="JossExpress" type="Area3D" parent="Entorno/Construcciones/joselineTienda (1)"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Entorno/Construcciones/joselineTienda (1)/JossExpress"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.66883, 13.8842, -10.8182)
 
 [node name="large_buildingG2" parent="Entorno/Construcciones" instance=ExtResource("12_yf7ds")]
 transform = Transform3D(-29.9982, 0, -0.332477, 0, 30, 0, 0.332477, 0, -29.9982, -75.3365, 32.1296, 144.28)
@@ -211,8 +216,8 @@ transform = Transform3D(0.130695, 0, 3.49756, 0, 3.5, 0, -3.49756, 0, 0.130695, 
 [node name="cruce" type="Area3D" parent="Entorno/Construcciones/sedan-sports"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Entorno/Construcciones/sedan-sports/cruce"]
-transform = Transform3D(1, 0, 1.49012e-08, 0, 1.00006, 0, -1.49012e-08, 0, 1, 0.641356, 0.572768, 0.0804081)
-shape = SubResource("BoxShape3D_bi0k3")
+transform = Transform3D(1, 0, 1.49012e-08, 0, 1.00003, 0, -1.49012e-08, 0, 1, -4.76837e-07, 0.343514, -0.0957947)
+shape = SubResource("BoxShape3D_petfo")
 
 [node name="Malla" type="Node3D" parent="Entorno"]
 
@@ -234,5 +239,7 @@ transform = Transform3D(0.0859457, -0.000658258, 0.00603907, 0.00189734, 0.01987
 
 [node name="Control" parent="Camara/Camera3D" instance=ExtResource("17_7dq3s")]
 
-[connection signal="input_event" from="Entorno/Construcciones/Casa/Area3D" to="." method="_on_area_3d_input_event"]
+[connection signal="input_event" from="Entorno/Construcciones/Casa/CasaArea3D" to="." method="_on_area_3d_input_event"]
+[connection signal="input_event" from="Entorno/Construcciones/Escuela_Frente (1)2/escuela" to="." method="_on_escuela_input_event"]
+[connection signal="input_event" from="Entorno/Construcciones/joselineTienda (1)/JossExpress" to="." method="_on_joss_express_input_event"]
 [connection signal="input_event" from="Entorno/Construcciones/sedan-sports/cruce" to="." method="_on_cruce_input_event"]

@@ -1,0 +1,497 @@
+[gd_scene load_steps=4 format=3 uid="uid://bl6g11o11113p"]
+
+[ext_resource type="Script" uid="uid://2jj4pjgh5dqp" path="res://Scripts/ScriptEnciclopediaCasa2.gd" id="1_merfy"]
+[ext_resource type="Texture2D" uid="uid://cxj3vyyaypw3x" path="res://src/image/Fondo.png" id="2_hcvm7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5oiap"]
+texture = ExtResource("2_hcvm7")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_merfy")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 1535.0
+offset_bottom = 861.0
+scale = Vector2(0.75, 0.75)
+theme_override_styles/panel = SubResource("StyleBoxTexture_5oiap")
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonBack" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.0798608
+anchor_bottom = 0.0328468
+offset_left = 39.0
+offset_top = 30.0
+offset_right = 84.0
+offset_bottom = 61.0
+scale = Vector2(0.75, 0.75)
+text = "Back"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.105893
+anchor_top = -0.0104773
+anchor_right = 0.105893
+anchor_bottom = 0.0360885
+offset_left = 275.0
+offset_top = 33.0
+offset_right = 692.0
+offset_bottom = 188.0
+scale = Vector2(0.75, 0.75)
+theme_override_font_sizes/font_size = 70
+text = "House 2
+Baño"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0404436
+anchor_right = 0.0404436
+anchor_bottom = 0.0314319
+offset_left = 1049.0
+offset_top = 139.0
+offset_right = 1375.0
+offset_bottom = 432.0
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Panel2/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0760054
+anchor_top = 0.0565036
+anchor_right = 0.0760054
+anchor_bottom = 0.0735685
+offset_left = 37.0
+offset_top = 191.0
+offset_right = 305.0
+offset_bottom = 214.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Panel2/Panel"]
+position = Vector2(175, 100)
+scale = Vector2(3, 3)
+
+[node name="LabelDescription" type="Label" parent="Panel2/Panel"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 248.0
+offset_right = 299.0
+offset_bottom = 438.0
+theme_override_font_sizes/font_size = 12
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0354425
+anchor_top = 0.000776102
+anchor_right = 0.0354425
+anchor_bottom = 0.00077612
+offset_left = 3.0
+offset_top = 182.0
+offset_right = 155.0
+offset_bottom = 306.0
+scale = Vector2(0.75, 0.75)
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0432703
+anchor_top = -0.00426852
+anchor_right = 0.0432703
+anchor_bottom = -0.00426848
+offset_left = 141.0
+offset_top = 186.333
+offset_right = 293.0
+offset_bottom = 310.333
+scale = Vector2(0.75, 0.75)
+icon_alignment = 1
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0469667
+anchor_top = -0.00116414
+anchor_right = 0.0469667
+anchor_bottom = -0.00116414
+offset_left = 288.333
+offset_top = 183.667
+offset_right = 440.333
+offset_bottom = 307.667
+scale = Vector2(0.75, 0.75)
+icon_alignment = 1
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button4" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0354425
+anchor_top = 0.000776084
+anchor_right = 0.0354425
+anchor_bottom = 0.000776084
+offset_left = 3.0
+offset_top = 351.0
+offset_right = 155.0
+offset_bottom = 475.0
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button5" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0452272
+anchor_top = 0.00737289
+anchor_right = 0.0452272
+anchor_bottom = 0.00737289
+offset_left = 138.0
+offset_top = 345.333
+offset_right = 290.0
+offset_bottom = 469.333
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button6" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0469667
+anchor_top = -0.00116414
+anchor_right = 0.0469667
+anchor_bottom = -0.00116414
+offset_left = 288.333
+offset_top = 352.667
+offset_right = 440.333
+offset_bottom = 476.667
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button7" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0354425
+anchor_top = 0.00077612
+anchor_right = 0.0354425
+anchor_bottom = 0.00077612
+offset_left = 3.0
+offset_top = 532.0
+offset_right = 155.0
+offset_bottom = 656.0
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button8" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0458795
+anchor_top = 0.00388053
+anchor_right = 0.0458795
+anchor_bottom = 0.00388053
+offset_left = 137.0
+offset_top = 529.333
+offset_right = 289.0
+offset_bottom = 653.333
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button9" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0506632
+anchor_top = 0.0100893
+anchor_right = 0.0506632
+anchor_bottom = 0.0100893
+offset_left = 282.667
+offset_top = 524.0
+offset_right = 434.667
+offset_bottom = 648.0
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button10" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.389432
+anchor_top = -0.627862
+anchor_right = 0.389432
+anchor_bottom = -0.627862
+offset_left = -83.6666
+offset_top = 722.0
+offset_right = 68.3334
+offset_bottom = 846.0
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button11" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.389432
+anchor_top = -0.627862
+anchor_right = 0.389432
+anchor_bottom = -0.627862
+offset_left = 69.3334
+offset_top = 722.0
+offset_right = 221.333
+offset_bottom = 846.0
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button12" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.389432
+anchor_top = -0.627862
+anchor_right = 0.389432
+anchor_bottom = -0.627862
+offset_left = 222.333
+offset_top = 722.0
+offset_right = 374.333
+offset_bottom = 846.0
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button13" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.056534
+anchor_top = -0.215367
+anchor_right = 0.056534
+anchor_bottom = -0.215367
+offset_left = 426.667
+offset_top = 717.667
+offset_right = 578.667
+offset_bottom = 841.667
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button14" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0537073
+anchor_top = -0.214979
+anchor_right = 0.0537073
+anchor_bottom = -0.214979
+offset_left = 584.0
+offset_top = 717.333
+offset_right = 736.0
+offset_bottom = 841.333
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button15" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.390302
+anchor_top = -0.677144
+anchor_right = 0.390302
+anchor_bottom = -0.677144
+offset_left = -85.0
+offset_top = 933.333
+offset_right = 67.0
+offset_bottom = 1057.33
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button16" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.390302
+anchor_top = -0.677144
+anchor_right = 0.390302
+anchor_bottom = -0.677144
+offset_left = 68.0001
+offset_top = 933.333
+offset_right = 220.0
+offset_bottom = 1057.33
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button17" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.390302
+anchor_top = -0.677144
+anchor_right = 0.390302
+anchor_bottom = -0.677144
+offset_left = 221.0
+offset_top = 933.333
+offset_right = 373.0
+offset_bottom = 1057.33
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button18" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.284845
+anchor_top = -0.255336
+anchor_right = 0.284845
+anchor_bottom = -0.255336
+offset_left = 382.667
+offset_top = 920.0
+offset_right = 534.667
+offset_bottom = 1044.0
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button19" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.166993
+anchor_top = -0.45518
+anchor_right = 0.166993
+anchor_bottom = -0.45518
+offset_left = 563.333
+offset_top = 923.667
+offset_right = 715.333
+offset_bottom = 1047.67
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonBeforePage" type="Button" parent="Panel2"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 456.0
+offset_right = 48.0
+offset_bottom = 524.0
+text = "<"
+
+[node name="Button20" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.387476
+anchor_top = 0.0943928
+anchor_right = 0.387476
+anchor_bottom = 0.0943928
+offset_left = -80.6667
+offset_top = 619.583
+offset_right = 71.3333
+offset_bottom = 743.583
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button21" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.42569
+anchor_top = 0.105452
+anchor_right = 0.42569
+anchor_bottom = 0.105452
+offset_left = 13.7499
+offset_top = 610.083
+offset_right = 165.75
+offset_bottom = 734.083
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button22" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5703
+anchor_top = -0.0923394
+anchor_right = 0.5703
+anchor_bottom = -0.0923394
+offset_left = 95.0639
+offset_top = 611.986
+offset_right = 247.064
+offset_bottom = 735.986
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button23" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.468936
+anchor_top = -0.998005
+anchor_right = 0.468936
+anchor_bottom = -0.998005
+offset_left = -511.546
+offset_top = 1557.95
+offset_right = -359.546
+offset_bottom = 1681.95
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button24" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.501443
+anchor_top = -1.00577
+anchor_right = 0.501443
+anchor_bottom = -1.00577
+offset_left = -408.379
+offset_top = 1564.62
+offset_right = -256.379
+offset_bottom = 1688.62
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button25" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0193421
+anchor_top = -0.628073
+anchor_right = 0.0193421
+anchor_bottom = -0.628073
+offset_left = 27.6819
+offset_top = 1240.18
+offset_right = 179.682
+offset_bottom = 1364.18
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button26" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.390302
+anchor_top = -0.677144
+anchor_right = 0.390302
+anchor_bottom = -0.677144
+offset_left = 371.0
+offset_top = 933.333
+offset_right = 523.0
+offset_bottom = 1057.33
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button27" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0193421
+anchor_top = -0.628073
+anchor_right = 0.0193421
+anchor_bottom = -0.628073
+offset_left = 939.682
+offset_top = 1240.18
+offset_right = 1091.68
+offset_bottom = 1364.18
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true
+
+[node name="Button28" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.42569
+anchor_top = 0.105452
+anchor_right = 0.42569
+anchor_bottom = 0.105452
+offset_left = 316.75
+offset_top = 92.0833
+offset_right = 468.75
+offset_bottom = 216.083
+scale = Vector2(0.75, 0.75)
+metadata/_edit_use_anchors_ = true

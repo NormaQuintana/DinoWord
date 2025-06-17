@@ -1,4 +1,7 @@
+# dinosaurio.gd (o el script de tu enemigo)
 extends CharacterBody2D
+
+signal enemigo_destruido # Señal para notificar al spawner cuando este enemigo es destruido
 
 @onready var animated_sprite = get_node("AnimatedSprite2D")
 @onready var barra_de_vida_container = get_node("SubViewportContainer")
@@ -9,7 +12,7 @@ enum State {
 	HURT,
 	IDLE,
 	DEAD,
-	BITING # Nuevo estado para atacar el huevo
+	BITING 
 }
 
 @export var velocidad = 70.0
@@ -19,20 +22,18 @@ var en_contacto_con_huevo = false # Nueva variable para el contacto con el huevo
 var direccion = Vector2.LEFT
 var estado = State.RUNNING
 @export var vida = 100
-@export var daño_por_segundo = 10 # Valor por defecto, será sobrescrito
+@export var daño_por_segundo = 50 # Valor por defecto, será sobrescrito
 
 var dinosaurio_manager
 var huevo_objetivo # Referencia al huevo que está atacando
 var huevo_roto = false # Nueva variable para indicar si el huevo fue roto
 
 func _ready():
-	var posibles_daños = [10, 15, 20]
-	daño_por_segundo = posibles_daños[randi_range(0, posibles_daños.size() - 1)]
-	print("Enemigo creado con daño:", daño_por_segundo)
+	add_to_group("enemigos")
 
-	dinosaurio_manager = get_node_or_null("../DinosaurioManager")
+	dinosaurio_manager = $"../DinosaurioManager" 
 	if not is_instance_valid(dinosaurio_manager):
-		printerr("Error: No se encontró el nodo DinosaurioManager.")
+		printerr("Error: No se encontró el nodo DinosaurioManager. Asegúrate de que la ruta sea correcta.")
 
 	if animated_sprite:
 		animated_sprite.play("move")
@@ -70,7 +71,7 @@ func _physics_process(delta):
 				if barra_de_vida:
 					barra_de_vida.value = vida
 				if vida <= 0:
-					_morir()
+					_morir() # Llama a _morir() para la destrucción
 			else:
 				animated_sprite.play("idle")
 				estado = State.IDLE
@@ -86,24 +87,28 @@ func _physics_process(delta):
 						huevo_objetivo._romper_huevo()
 						huevo_roto = true # Marcar el huevo como roto para la transición
 				elif huevo_roto:
-					estado = State.RUNNING # Volver a correr después de que el huevo fue roto
+					estado = State.RUNNING 
 			else:
-				estado = State.RUNNING # Si el huevo objetivo ya no es válido
+				estado = State.RUNNING 
 		State.IDLE:
 			velocity = Vector2.ZERO
 			animated_sprite.play("idle")
 		State.DEAD:
+			# El estado DEAD solo se encarga de la animación final. La eliminación se hace en _morir().
 			velocity = Vector2.ZERO
-			animated_sprite.play("dead")
-			set_physics_process(false)
-			set_process(false)
-			queue_free()
+			animated_sprite.play("dead") 
+			# No hacemos queue_free() aquí directamente para asegurar la señal se emita en _morir().
 
 func _morir():
+	print("Enemigo muriendo.") # Para depuración
 	estado = State.DEAD
-	set_physics_process(false)
-	set_process(false)
-	queue_free()
+	set_physics_process(false) # Detiene el movimiento y la lógica de física
+	set_process(false)         # Detiene el _process general del nodo
+	
+	enemigo_destruido.emit() # Emitir la señal ANTES de liberar el nodo
+	
+	queue_free() # Libera el nodo del enemigo de la memoria
+
 
 func obtener_daño():
 	return daño_por_segundo

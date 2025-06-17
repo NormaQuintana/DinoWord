@@ -1,0 +1,181 @@
+[gd_scene load_steps=11 format=3 uid="uid://uujo1452j814"]
+
+[ext_resource type="Script" uid="uid://bmxiycvj0orkb" path="res://Scripts/vista_potenciador.gd" id="1_86kv4"]
+[ext_resource type="Texture2D" uid="uid://cxj3vyyaypw3x" path="res://src/image/Fondo.png" id="1_t6f00"]
+[ext_resource type="Texture2D" uid="uid://p14sgtxncnse" path="res://src/image/emptyBar.JPG" id="1_wvv0r"]
+[ext_resource type="Texture2D" uid="uid://caxslg81ccq2t" path="res://src/image/fullBar.JPG" id="2_oc1qy"]
+[ext_resource type="Texture2D" uid="uid://cj3qjr5jcfpy7" path="res://src/image/btn.png" id="4_bw8vq"]
+[ext_resource type="Texture2D" uid="uid://b3v7dry68cfng" path="res://src/image/Huevito.png" id="4_opojr"]
+[ext_resource type="Texture2D" uid="uid://b3268adv1qbt5" path="res://src/image/boton-menos.png" id="6_vob30"]
+[ext_resource type="PackedScene" uid="uid://db522mitycijf" path="res://Escenas/Dinosaurios/dinosaurio.tscn" id="6_vyyhi"]
+[ext_resource type="Script" uid="uid://c8turl5fd2wyy" path="res://Scripts/ir_nivel.gd" id="8_ku8mp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_60mwe"]
+texture = ExtResource("1_t6f00")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_86kv4")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1592.0
+offset_top = -458.0
+offset_right = 1600.0
+offset_bottom = -450.0
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_60mwe")
+
+[node name="Titulo" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -264.0
+offset_top = 16.0
+offset_right = 289.0
+offset_bottom = 85.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 45
+text = "Get ready your dinosaurs"
+
+[node name="Panel" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 93.0
+offset_right = 423.0
+offset_bottom = 592.0
+
+[node name="NombreDinosaurioLabel" type="Label" parent="Panel/Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -23.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 80
+text = "Carbón"
+
+[node name="LifeBar" type="TextureProgressBar" parent="Panel"]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 429.0
+offset_right = 996.0
+offset_bottom = 439.0
+max_value = 200.0
+value = 100.0
+texture_under = ExtResource("1_wvv0r")
+texture_progress = ExtResource("2_oc1qy")
+
+[node name="LifeLabel" type="Label" parent="Panel/LifeBar"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = -52.0
+offset_right = 79.0
+offset_bottom = -1.0
+theme_override_font_sizes/font_size = 37
+text = "Life"
+
+[node name="Agregar" type="Button" parent="Panel/LifeBar"]
+layout_mode = 0
+offset_left = 500.0
+offset_top = -22.0
+offset_right = 556.0
+offset_bottom = 34.0
+theme_override_icons/icon = ExtResource("4_bw8vq")
+
+[node name="Eliminar" type="Button" parent="Panel/LifeBar"]
+layout_mode = 0
+offset_left = 571.0
+offset_top = -22.0
+offset_right = 1091.0
+offset_bottom = 498.0
+scale = Vector2(0.11, 0.11)
+theme_override_icons/icon = ExtResource("6_vob30")
+
+[node name="AttackBar" type="TextureProgressBar" parent="Panel"]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 542.0
+offset_right = 996.0
+offset_bottom = 552.0
+value = 50.0
+texture_under = ExtResource("1_wvv0r")
+texture_progress = ExtResource("2_oc1qy")
+
+[node name="AttackLabel" type="Label" parent="Panel/AttackBar"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = -50.0
+offset_right = 130.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 37
+text = "Attack"
+
+[node name="Agregar2" type="Button" parent="Panel/AttackBar"]
+layout_mode = 0
+offset_left = 498.0
+offset_top = -24.0
+offset_right = 556.0
+offset_bottom = 34.0
+theme_override_icons/icon = ExtResource("4_bw8vq")
+
+[node name="Eliminar2" type="Button" parent="Panel/AttackBar"]
+layout_mode = 0
+offset_left = 571.0
+offset_top = -24.0
+offset_right = 1091.0
+offset_bottom = 496.0
+scale = Vector2(0.11, 0.11)
+theme_override_icons/icon = ExtResource("6_vob30")
+
+[node name="Huevito" type="Sprite2D" parent="."]
+position = Vector2(723, 232)
+rotation = -0.0288624
+scale = Vector2(0.41923, 0.393505)
+texture = ExtResource("4_opojr")
+
+[node name="CantidadHuevitos" type="Label" parent="."]
+offset_left = 880.0
+offset_top = 298.0
+offset_right = 940.0
+offset_bottom = 367.0
+theme_override_font_sizes/font_size = 50
+text = "X0"
+
+[node name="Dinosaurio" parent="." instance=ExtResource("6_vyyhi")]
+position = Vector2(230, 298)
+scale = Vector2(3.7, 3.7)
+velocidad = 0.0
+
+[node name="BotonIzquierda" type="Button" parent="."]
+offset_left = 47.0
+offset_top = 261.0
+offset_right = 89.0
+offset_bottom = 362.0
+theme_override_font_sizes/font_size = 30
+text = "<
+"
+
+[node name="BotonDerecha" type="Button" parent="."]
+offset_left = 367.0
+offset_top = 261.0
+offset_right = 409.0
+offset_bottom = 362.0
+theme_override_font_sizes/font_size = 30
+text = ">"
+
+[node name="IrNivel" type="Button" parent="."]
+offset_left = 925.0
+offset_top = 32.0
+offset_right = 1125.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 40
+text = "Let's start"
+script = ExtResource("8_ku8mp")

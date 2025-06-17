@@ -1,0 +1,369 @@
+[gd_scene load_steps=13 format=3 uid="uid://cuki5pwxck6oy"]
+
+[ext_resource type="Script" uid="uid://btv6jwva50x31" path="res://Scripts/nivel_escuela.gd" id="1_7b3u4"]
+[ext_resource type="Texture2D" uid="uid://3pfn1e0swqpr" path="res://src/image/InteriorEscuela.png" id="2_7b3u4"]
+[ext_resource type="Script" uid="uid://b4p1ml2bnpyyd" path="res://Scripts/boton_fin_nivel.gd" id="3_dp4b0"]
+[ext_resource type="Script" uid="uid://ck0f7j4cekkl8" path="res://Scripts/DinosaurioManager.gd" id="4_5vvv8"]
+[ext_resource type="PackedScene" uid="uid://c07wilxhnposg" path="res://Escenas/Huevo/huevo_1.tscn" id="5_7u8oi"]
+[ext_resource type="PackedScene" uid="uid://dbb2vasf4cji5" path="res://Escenas/Huevo/huevo_2.tscn" id="6_0kvew"]
+[ext_resource type="PackedScene" uid="uid://d1dogphufb2kl" path="res://Escenas/Huevo/huevo_3.tscn" id="7_b4i6b"]
+[ext_resource type="PackedScene" uid="uid://cxj0ocsdxpnh" path="res://Escenas/Huevo/huevo_4.tscn" id="8_cpuw0"]
+[ext_resource type="PackedScene" uid="uid://c0dxpvjeu5h6s" path="res://Escenas/EnemigoSpawner.tscn" id="9_vt8wm"]
+[ext_resource type="PackedScene" uid="uid://ctdkv1xmhaw7h" path="res://Escenas/Enemigo.tscn" id="10_xt20x"]
+[ext_resource type="PackedScene" uid="uid://s7ijr2mberhq" path="res://Escenas/boton_salir_mapa.tscn" id="11_piedp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qfmpl"]
+texture = ExtResource("2_7b3u4")
+modulate_color = Color(1, 1, 1, 0.556863)
+
+[node name="Nivel" type="Node2D"]
+script = ExtResource("1_7b3u4")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -268.0
+offset_top = -434.0
+offset_right = 1448.0
+offset_bottom = 1037.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_qfmpl")
+
+[node name="Carril 1" type="Line2D" parent="."]
+position = Vector2(-315.932, 123)
+scale = Vector2(1.24466, 1)
+points = PackedVector2Array(300, 30, 1130, 30)
+width = 100.0
+default_color = Color(0.384314, 0.435294, 0.278431, 0.686275)
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Carril 2" type="Line2D" parent="."]
+position = Vector2(-309, 172)
+scale = Vector2(1.23883, 1)
+points = PackedVector2Array(300, 90, 1130, 90)
+width = 100.0
+default_color = Color(0.384314, 0.435294, 0.278431, 0.686275)
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Carril 3" type="Line2D" parent="."]
+position = Vector2(-312, 220)
+scale = Vector2(1.23592, 1)
+points = PackedVector2Array(300, 150, 1130, 150)
+width = 100.0
+default_color = Color(0.384314, 0.435294, 0.278431, 0.686275)
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Carril 4" type="Line2D" parent="."]
+position = Vector2(-310.573, 269)
+scale = Vector2(1.23786, 1)
+points = PackedVector2Array(300, 210, 1130, 210)
+width = 100.0
+default_color = Color(0.384314, 0.435294, 0.278431, 0.686275)
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Botones" type="CanvasLayer" parent="."]
+
+[node name="vocabulario" type="Button" parent="Botones"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 93.0
+offset_top = 103.0
+offset_right = 1088.0
+offset_bottom = 202.0
+
+[node name="ordenar" type="Button" parent="Botones"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 93.0
+offset_top = 216.0
+offset_right = 1088.0
+offset_bottom = 310.0
+
+[node name="voz" type="Button" parent="Botones"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 93.0
+offset_top = 320.0
+offset_right = 1088.0
+offset_bottom = 421.0
+
+[node name="frases" type="Button" parent="Botones"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 95.0
+offset_top = 432.0
+offset_right = 1088.0
+offset_bottom = 528.0
+
+[node name="FinNivel" type="Panel" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 285.0
+offset_top = 272.0
+offset_right = 868.0
+offset_bottom = 642.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Felicidades" type="Label" parent="FinNivel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -251.0
+offset_top = -70.5
+offset_right = 251.0
+offset_bottom = 70.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Congratulations you
+ completed the level!"
+
+[node name="BotonFinNivel" type="Button" parent="FinNivel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -58.5
+offset_top = -57.0
+offset_right = 49.5
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 35
+text = "Salir al Mapa
+"
+script = ExtResource("3_dp4b0")
+
+[node name="DinosaurioManager" type="Node" parent="."]
+script = ExtResource("4_5vvv8")
+
+[node name="Huevo1" parent="." instance=ExtResource("5_7u8oi")]
+position = Vector2(59, 150)
+
+[node name="Huevo2" parent="." instance=ExtResource("6_0kvew")]
+position = Vector2(59, 258)
+
+[node name="Huevo3" parent="." instance=ExtResource("7_b4i6b")]
+position = Vector2(61, 369)
+
+[node name="Huevo4" parent="." instance=ExtResource("8_cpuw0")]
+position = Vector2(61, 480)
+
+[node name="PuntoAparicionCarril1" type="Marker2D" parent="."]
+position = Vector2(1176, 144)
+
+[node name="PuntoAparicionCarril2" type="Marker2D" parent="."]
+position = Vector2(1176, 245)
+
+[node name="PuntoAparicionCarril3" type="Marker2D" parent="."]
+position = Vector2(1176, 352)
+
+[node name="PuntoAparicionCarril4" type="Marker2D" parent="."]
+position = Vector2(1176, 470)
+
+[node name="EnemigoSpawner" parent="." node_paths=PackedStringArray("puntos_de_aparicion") instance=ExtResource("9_vt8wm")]
+position = Vector2(-3, 105)
+tiempo_de_aparicion = 5.0
+puntos_de_aparicion = [NodePath("../PuntoAparicionCarril1"), NodePath("../PuntoAparicionCarril2"), NodePath("../PuntoAparicionCarril3"), NodePath("../PuntoAparicionCarril4")]
+enemigo_scene = ExtResource("10_xt20x")
+
+[node name="BotonSalirMapa" parent="." instance=ExtResource("11_piedp")]
+
+[node name="Preguntas" type="CanvasLayer" parent="."]
+
+[node name="vocabulario" type="Panel" parent="Preguntas"]
+visible = false
+offset_left = 144.0
+offset_top = 105.0
+offset_right = 1024.0
+offset_bottom = 535.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Preguntas/vocabulario"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -200.0
+offset_right = 250.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PreguntaLabel" type="Label" parent="Preguntas/vocabulario/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 50
+text = "Vocabulario"
+
+[node name="OpcionesContainer" type="HBoxContainer" parent="Preguntas/vocabulario/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="opcion1" type="Button" parent="Preguntas/vocabulario/VBoxContainer/OpcionesContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Aparecer"
+
+[node name="opcion2" type="Button" parent="Preguntas/vocabulario/VBoxContainer/OpcionesContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+
+[node name="opcion3" type="Button" parent="Preguntas/vocabulario/VBoxContainer/OpcionesContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+
+[node name="opcion4" type="Button" parent="Preguntas/vocabulario/VBoxContainer/OpcionesContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+
+[node name="MensajeLabel" type="Label" parent="Preguntas/vocabulario/VBoxContainer"]
+layout_mode = 2
+
+[node name="ordenar" type="Panel" parent="Preguntas"]
+visible = false
+offset_left = 144.0
+offset_top = 105.0
+offset_right = 1024.0
+offset_bottom = 535.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Preguntas/ordenar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -115.5
+offset_top = -100.0
+offset_right = 115.5
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PreguntaLabel" type="Label" parent="Preguntas/ordenar/VBoxContainer"]
+layout_mode = 2
+text = "Ordenar"
+
+[node name="OpcionesContainer" type="VBoxContainer" parent="Preguntas/ordenar/VBoxContainer"]
+layout_mode = 2
+
+[node name="palabra1" type="Button" parent="Preguntas/ordenar/VBoxContainer/OpcionesContainer"]
+layout_mode = 2
+text = "Aparecer"
+
+[node name="palabra2" type="Button" parent="Preguntas/ordenar/VBoxContainer/OpcionesContainer"]
+layout_mode = 2
+
+[node name="palabra3" type="Button" parent="Preguntas/ordenar/VBoxContainer/OpcionesContainer"]
+layout_mode = 2
+
+[node name="palabra4" type="Button" parent="Preguntas/ordenar/VBoxContainer/OpcionesContainer"]
+layout_mode = 2
+
+[node name="SeleccionadasContainer" type="HBoxContainer" parent="Preguntas/ordenar/VBoxContainer"]
+layout_mode = 2
+
+[node name="MensajeLabel" type="Label" parent="Preguntas/ordenar/VBoxContainer"]
+layout_mode = 2
+
+[node name="voz" type="Panel" parent="Preguntas"]
+visible = false
+offset_left = 144.0
+offset_top = 105.0
+offset_right = 1024.0
+offset_bottom = 535.0
+
+[node name="Label" type="Label" parent="Preguntas/voz"]
+layout_mode = 0
+offset_left = 389.0
+offset_top = 75.0
+offset_right = 481.0
+offset_bottom = 98.0
+text = "Voz"
+
+[node name="prueba_voz" type="Button" parent="Preguntas/voz"]
+layout_mode = 0
+offset_left = 309.0
+offset_top = 165.0
+offset_right = 495.0
+offset_bottom = 254.0
+text = "Aparecer"
+
+[node name="frases" type="Panel" parent="Preguntas"]
+visible = false
+offset_left = 144.0
+offset_top = 105.0
+offset_right = 1024.0
+offset_bottom = 535.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Preguntas/frases"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.0
+offset_top = -48.5
+offset_right = 39.0
+offset_bottom = 48.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PreguntaLabel" type="Label" parent="Preguntas/frases/VBoxContainer"]
+layout_mode = 2
+text = "Frases"
+
+[node name="OpcionesContainer" type="VBoxContainer" parent="Preguntas/frases/VBoxContainer"]
+layout_mode = 2
+
+[node name="opcion1" type="Button" parent="Preguntas/frases/VBoxContainer/OpcionesContainer"]
+layout_mode = 2
+text = "Aparecer"
+
+[node name="opcion2" type="Button" parent="Preguntas/frases/VBoxContainer/OpcionesContainer"]
+layout_mode = 2
+
+[node name="MensajeLabel" type="Label" parent="Preguntas/frases/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 1000.0
+offset_top = 15.0
+offset_right = 1141.0
+offset_bottom = 55.0
+grow_horizontal = 0
+
+[node name="Score" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Score:"
+
+[node name="ScoreValue" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "000000"
+
+[connection signal="pressed" from="Botones/vocabulario" to="." method="_on_vocabulario_pressed"]
+[connection signal="pressed" from="Botones/ordenar" to="." method="_on_ordenar_pressed"]
+[connection signal="pressed" from="Botones/voz" to="." method="_on_voz_pressed"]
+[connection signal="pressed" from="Botones/frases" to="." method="_on_frases_pressed"]
+[connection signal="pressed" from="Preguntas/vocabulario/VBoxContainer/OpcionesContainer/opcion1" to="." method="_on_prueba_vocabulario_pressed"]
+[connection signal="pressed" from="Preguntas/ordenar/VBoxContainer/OpcionesContainer/palabra1" to="." method="_on_prueba_ordenar_pressed"]
+[connection signal="pressed" from="Preguntas/voz/prueba_voz" to="." method="_on_prueba_voz_pressed"]
+[connection signal="pressed" from="Preguntas/frases/VBoxContainer/OpcionesContainer/opcion1" to="." method="_on_prueba_frases_pressed"]

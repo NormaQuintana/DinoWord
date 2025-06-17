@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://s7ijr2mberhq"]
+
+[ext_resource type="Texture2D" uid="uid://ci11ont6lndsx" path="res://src/image/Mapa.png" id="1_3fnjc"]
+[ext_resource type="Script" uid="uid://4i4l73tc332a" path="res://Scripts/boton_salir_mapa.gd" id="2_bqd8e"]
+[ext_resource type="Script" uid="uid://cs72h7g3u0t4l" path="res://Scripts/confirmacion_popup.gd" id="3_05mdp"]
+
+[node name="BotonSalirMapa" type="TextureButton"]
+texture_filter = 1
+offset_right = 1024.0
+offset_bottom = 1024.0
+scale = Vector2(0.08, 0.08)
+texture_normal = ExtResource("1_3fnjc")
+stretch_mode = 0
+script = ExtResource("2_bqd8e")
+
+[node name="ConfirmacionPopup" type="ConfirmationDialog" parent="."]
+title = "¿Estás seguro de que quieres salir al mapa?"
+script = ExtResource("3_05mdp")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="confirmed" from="ConfirmacionPopup" to="ConfirmacionPopup" method="_on_confirmed"]

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqwhuhn54wv8j"
 path.s3tc="res://.godot/imported/Dinobucks_outdoor_table_chair_set_01_chair_diff.png-88836debd241ade2f61d9018ec6c739e.s3tc.ctex"
+path.etc2="res://.godot/imported/Dinobucks_outdoor_table_chair_set_01_chair_diff.png-88836debd241ade2f61d9018ec6c739e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Escenas/Mapa/terreno/complemento Edificios/Models/GLTF format/Dinobucks_outdoor_table_chair_set_01_chair_diff.png"
-dest_files=["res://.godot/imported/Dinobucks_outdoor_table_chair_set_01_chair_diff.png-88836debd241ade2f61d9018ec6c739e.s3tc.ctex"]
+dest_files=["res://.godot/imported/Dinobucks_outdoor_table_chair_set_01_chair_diff.png-88836debd241ade2f61d9018ec6c739e.s3tc.ctex", "res://.godot/imported/Dinobucks_outdoor_table_chair_set_01_chair_diff.png-88836debd241ade2f61d9018ec6c739e.etc2.ctex"]
 
 [params]
 

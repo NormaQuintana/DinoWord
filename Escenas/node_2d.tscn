@@ -1,0 +1,105 @@
+[gd_scene load_steps=11 format=3 uid="uid://bki2gwrevntjb"]
+
+[ext_resource type="Script" uid="uid://d0yuw1m8gg5uq" path="res://Scripts/ScriptEnciclopedia.gd" id="1_wtcfe"]
+[ext_resource type="PackedScene" uid="uid://gi7ddl1udvlp" path="res://Escenas/enciclopediaCasa.tscn" id="2_0e48y"]
+[ext_resource type="PackedScene" uid="uid://ygmvgoc6x382" path="res://Escenas/SceneOfficeEnciclopedia.tscn" id="3_epypp"]
+[ext_resource type="PackedScene" uid="uid://bd2bgkq5sj1bw" path="res://Escenas/SceneSchool.tscn" id="4_d21ai"]
+[ext_resource type="PackedScene" uid="uid://5hvv8w2xcmrg" path="res://Escenas/SceneCoffeShop.tscn" id="5_rj586"]
+[ext_resource type="PackedScene" uid="uid://cwu27u22lqht1" path="res://Escenas/SceneCrossWalk.tscn" id="6_4d7sh"]
+[ext_resource type="PackedScene" uid="uid://b0jwgmvjql1lc" path="res://Escenas/SceneJExpress.tscn" id="7_ir8iy"]
+[ext_resource type="PackedScene" uid="uid://s7ijr2mberhq" path="res://Escenas/boton_salir_mapa.tscn" id="8_eslbg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y32ns"]
+bg_color = Color(1, 0.698039, 0.172549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wtcfe"]
+bg_color = Color(0.14902, 0.27451, 0.32549, 1)
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(49, 61)
+script = ExtResource("1_wtcfe")
+casa_scene = ExtResource("2_0e48y")
+office_scene = ExtResource("3_epypp")
+school_scene = ExtResource("4_d21ai")
+cafeteria_scene = ExtResource("5_rj586")
+crosswalk_scene = ExtResource("6_4d7sh")
+jexpress_scene = ExtResource("7_ir8iy")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -46.0
+offset_top = -57.0
+offset_right = 1119.0
+offset_bottom = 580.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_y32ns")
+
+[node name="ButtonCasa" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 219.0
+offset_right = 264.0
+offset_bottom = 330.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_wtcfe")
+text = "House"
+
+[node name="ButtonOffice" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 219.0
+offset_right = 564.0
+offset_bottom = 340.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_wtcfe")
+text = "Office"
+
+[node name="ButtonSchool" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 652.0
+offset_top = 217.0
+offset_right = 856.0
+offset_bottom = 328.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_wtcfe")
+text = "School"
+
+[node name="ButtonCafeteria" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 913.0
+offset_top = 219.0
+offset_right = 1117.0
+offset_bottom = 332.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_wtcfe")
+text = "Cafeteria"
+
+[node name="ButtonCrosswalk" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 402.0
+offset_right = 569.0
+offset_bottom = 513.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_wtcfe")
+text = "CrossWalk"
+
+[node name="ButtonJExpress" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 655.0
+offset_top = 406.0
+offset_right = 859.0
+offset_bottom = 517.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_wtcfe")
+text = "Joseline 
+Express"
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 443.0
+offset_top = 55.0
+offset_right = 860.0
+offset_bottom = 151.0
+theme_override_font_sizes/font_size = 55
+text = "WordVault "
+
+[node name="BotonSalirMapa" parent="." instance=ExtResource("8_eslbg")]

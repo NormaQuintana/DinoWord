@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://y5nr7auw51ac"
 path.s3tc="res://.godot/imported/Dinobucks_outdoor_table_chair_set_01_table_diff (2).png-cedeb3765df5e75966c3837aaa195160.s3tc.ctex"
+path.etc2="res://.godot/imported/Dinobucks_outdoor_table_chair_set_01_table_diff (2).png-cedeb3765df5e75966c3837aaa195160.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Escenas/Mapa/Modelos interactivos/Dinobucks_outdoor_table_chair_set_01_table_diff (2).png"
-dest_files=["res://.godot/imported/Dinobucks_outdoor_table_chair_set_01_table_diff (2).png-cedeb3765df5e75966c3837aaa195160.s3tc.ctex"]
+dest_files=["res://.godot/imported/Dinobucks_outdoor_table_chair_set_01_table_diff (2).png-cedeb3765df5e75966c3837aaa195160.s3tc.ctex", "res://.godot/imported/Dinobucks_outdoor_table_chair_set_01_table_diff (2).png-cedeb3765df5e75966c3837aaa195160.etc2.ctex"]
 
 [params]
 

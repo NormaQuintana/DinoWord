@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bv5k23e6q68yb"
 path.s3tc="res://.godot/imported/Dinobucks_dino.jpg-d35de0e7fb6f9dacf58195dc94cf61b0.s3tc.ctex"
+path.etc2="res://.godot/imported/Dinobucks_dino.jpg-d35de0e7fb6f9dacf58195dc94cf61b0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Escenas/Mapa/Modelos interactivos/Dinobucks_dino.jpg"
-dest_files=["res://.godot/imported/Dinobucks_dino.jpg-d35de0e7fb6f9dacf58195dc94cf61b0.s3tc.ctex"]
+dest_files=["res://.godot/imported/Dinobucks_dino.jpg-d35de0e7fb6f9dacf58195dc94cf61b0.s3tc.ctex", "res://.godot/imported/Dinobucks_dino.jpg-d35de0e7fb6f9dacf58195dc94cf61b0.etc2.ctex"]
 
 [params]
 

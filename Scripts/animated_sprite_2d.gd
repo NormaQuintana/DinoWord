@@ -1,4 +1,4 @@
-extends CharacterBody2D # O KinematicBody2D
+extends CharacterBody2D 
 
 @onready var animated_sprite = get_node("AnimatedSprite2D")
 @onready var carril_line_1 = get_node("../Carril 1") 

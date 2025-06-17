@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b10upm54ronj6"
 path.s3tc="res://.godot/imported/Dinobucks_dino.jpg-db649d22bcad4d602644227924039474.s3tc.ctex"
+path.etc2="res://.godot/imported/Dinobucks_dino.jpg-db649d22bcad4d602644227924039474.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Escenas/Mapa/terreno/complemento Edificios/Models/GLTF format/Dinobucks_dino.jpg"
-dest_files=["res://.godot/imported/Dinobucks_dino.jpg-db649d22bcad4d602644227924039474.s3tc.ctex"]
+dest_files=["res://.godot/imported/Dinobucks_dino.jpg-db649d22bcad4d602644227924039474.s3tc.ctex", "res://.godot/imported/Dinobucks_dino.jpg-db649d22bcad4d602644227924039474.etc2.ctex"]
 
 [params]
 

@@ -1,0 +1,217 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0jwgmvjql1lc"]
+
+[ext_resource type="Script" uid="uid://d2ftf8lno0sk8" path="res://Scripts/ScriptJexpress.gd" id="1_sglyp"]
+[ext_resource type="Texture2D" uid="uid://cxj3vyyaypw3x" path="res://src/image/Fondo.png" id="2_lqxh3"]
+[ext_resource type="Texture2D" uid="uid://yfh3vtfh8yij" path="res://src/enciclopedia/Shell.png" id="2_m427j"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6tsdu"]
+texture = ExtResource("2_lqxh3")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_sglyp")
+
+[node name="Panel6" type="Panel" parent="."]
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 1535.0
+offset_bottom = 861.0
+scale = Vector2(0.75, 0.75)
+theme_override_styles/panel = SubResource("StyleBoxTexture_6tsdu")
+
+[node name="Label" type="Label" parent="Panel6"]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 21.3333
+offset_right = 964.0
+offset_bottom = 176.333
+theme_override_font_sizes/font_size = 70
+text = "Joseline Express"
+
+[node name="Panel" type="Panel" parent="Panel6"]
+layout_mode = 0
+offset_left = 1111.0
+offset_top = 139.0
+offset_right = 1446.0
+offset_bottom = 432.0
+
+[node name="Label" type="Label" parent="Panel6/Panel"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 17.0
+offset_right = 331.0
+offset_bottom = 40.0
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Panel6/Panel"]
+position = Vector2(170, 110)
+scale = Vector2(4, 4)
+
+[node name="LabelTraduccion" type="Label" parent="Panel6/Panel"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 189.0
+offset_right = 331.0
+offset_bottom = 212.0
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 62.6667
+offset_top = 209.333
+offset_right = 214.667
+offset_bottom = 333.333
+
+[node name="Button2" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 235.667
+offset_top = 210.333
+offset_right = 387.667
+offset_bottom = 334.333
+
+[node name="Button3" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 408.667
+offset_top = 210.333
+offset_right = 560.667
+offset_bottom = 334.333
+
+[node name="Button4" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 63.6667
+offset_top = 378.333
+offset_right = 215.667
+offset_bottom = 502.333
+
+[node name="Button5" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 232.667
+offset_top = 376.333
+offset_right = 384.667
+offset_bottom = 500.333
+icon = ExtResource("2_m427j")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button6" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 408.667
+offset_top = 373.333
+offset_right = 560.667
+offset_bottom = 497.333
+
+[node name="Button7" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 63.6667
+offset_top = 559.333
+offset_right = 215.667
+offset_bottom = 683.333
+
+[node name="Button8" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 231.667
+offset_top = 559.333
+offset_right = 383.667
+offset_bottom = 683.333
+
+[node name="Button9" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 405.667
+offset_top = 559.333
+offset_right = 557.667
+offset_bottom = 683.333
+
+[node name="Button10" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 712.0
+offset_right = 384.0
+offset_bottom = 836.0
+
+[node name="Button11" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 212.0
+offset_right = 732.0
+offset_bottom = 336.0
+
+[node name="Button12" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 757.0
+offset_top = 212.0
+offset_right = 909.0
+offset_bottom = 336.0
+
+[node name="Button13" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 932.0
+offset_top = 213.333
+offset_right = 1084.0
+offset_bottom = 337.333
+
+[node name="Button14" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 370.667
+offset_right = 732.0
+offset_bottom = 494.667
+
+[node name="Button15" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 761.333
+offset_top = 368.0
+offset_right = 913.333
+offset_bottom = 492.0
+
+[node name="Button16" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 934.667
+offset_top = 366.667
+offset_right = 1086.67
+offset_bottom = 490.667
+
+[node name="Button17" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 556.0
+offset_right = 732.0
+offset_bottom = 680.0
+
+[node name="Button18" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 754.667
+offset_top = 553.333
+offset_right = 906.667
+offset_bottom = 677.333
+
+[node name="Button19" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 933.333
+offset_top = 549.333
+offset_right = 1085.33
+offset_bottom = 673.333
+
+[node name="Button20" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 756.0
+offset_top = 705.333
+offset_right = 908.0
+offset_bottom = 829.333
+
+[node name="ButtonBack" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 28.0
+offset_right = 77.0
+offset_bottom = 59.0
+text = "back
+"
+
+[node name="BotonMagico" type="Button" parent="Panel6"]
+layout_mode = 0
+offset_left = 109.333
+offset_top = 106.667
+offset_right = 279.333
+offset_bottom = 137.667
+text = "Desbloquear boton 5"
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]

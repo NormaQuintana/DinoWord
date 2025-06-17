@@ -137,6 +137,7 @@ scale = Vector2(0.11, 0.11)
 theme_override_icons/icon = ExtResource("6_vob30")
 
 [node name="BotonSalirMapa" parent="Panel" instance=ExtResource("7_sbav1")]
+layout_mode = 0
 offset_left = 24.0
 offset_top = 8.0
 offset_right = 1048.0

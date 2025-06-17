@@ -3,7 +3,7 @@ extends Node
 
 var saved_life: int = 100
 var saved_attack: int = 50
-var huevitos_total: int = 1 # <--- ¡AQUÍ! Inicializa los huevitos del jugador por defecto
+var huevitos_total: int = 1 
 
 func reset_player_stats():
 	saved_life = 100

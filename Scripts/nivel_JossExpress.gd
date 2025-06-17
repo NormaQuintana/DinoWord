@@ -31,7 +31,7 @@ var current_frases_correct_answer_text: String = ""
 @onready var ordenar_mensaje_label = $Preguntas/ordenar/VBoxContainer/MensajeLabel
 
 # Ya no necesitamos estas variables locales si usamos GlobalData
-# var ordenar_data_casa: Dictionary = {}
+# var ordenar_data_JoselineExpress: Dictionary = {}
 var current_ordenar_correct_order: Array[String] = []
 var current_ordenar_selected_order: Array[String] = []
 
@@ -96,9 +96,9 @@ func _on_vocabulario_option_selected(selected_answer_text: String) -> void:
 
 func _display_new_vocabulario_question():
 	# Obtener los datos del vocabulario desde GlobalData
-	var vocabulario_data = GlobalData.data.casa.vocabulario
+	var vocabulario_data = GlobalData.data.JoselineExpress.vocabulario
 	if vocabulario_data.is_empty():
-		vocabulario_pregunta_label.text = "No hay preguntas de vocabulario disponibles para 'casa'."
+		vocabulario_pregunta_label.text = "No hay preguntas de vocabulario disponibles para 'JoselineExpress'."
 		return
 
 	for child in vocabulario_opciones_container.get_children():
@@ -179,9 +179,9 @@ func _on_ordenar_check_pressed() -> void:
 
 func _display_new_ordenar_question():
 	# Obtener los datos de ordenar desde GlobalData
-	var ordenar_data = GlobalData.data.casa.ordenar
+	var ordenar_data = GlobalData.data.JoselineExpress.ordenar
 	if ordenar_data.is_empty():
-		ordenar_pregunta_label.text = "No hay preguntas de ordenar disponibles para 'casa'."
+		ordenar_pregunta_label.text = "No hay preguntas de ordenar disponibles para 'JoselineExpress'."
 		return
 
 	for child in ordenar_opciones_container.get_children():
@@ -260,9 +260,9 @@ func _on_frases_option_selected(selected_answer_text: String) -> void:
 
 func _display_new_frases_question():
 	# Obtener los datos de frases desde GlobalData
-	var frases_data = GlobalData.data.casa.frases
+	var frases_data = GlobalData.data.JoselineExpress.frases
 	if frases_data.is_empty():
-		frases_pregunta_label.text = "No hay preguntas de frases disponibles para 'casa'."
+		frases_pregunta_label.text = "No hay preguntas de frases disponibles para 'JoselineExpress'."
 		return
 
 	for child in frases_opciones_container.get_children():
@@ -335,8 +335,8 @@ func _update_score_display() -> void:
 func _on_voz_pressed() -> void:
 	var panel = $Preguntas/voz
 	panel.visible = true
-	# Aquí ya estás usando GlobalData.data.casa.vocabulario, lo cual es correcto.
-	var vocabulario = GlobalData.data.casa.vocabulario
+	# Aquí ya estás usando GlobalData.data.JoselineExpress.vocabulario, lo cual es correcto.
+	var vocabulario = GlobalData.data.JoselineExpress.vocabulario
 	print(vocabulario)
 	var id_aleatorio = vocabulario.keys().pick_random()
 	var pregunta = vocabulario[id_aleatorio]

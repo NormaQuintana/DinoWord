@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://uujo1452j814"]
+[gd_scene load_steps=12 format=3 uid="uid://uujo1452j814"]
 
 [ext_resource type="Script" uid="uid://bmxiycvj0orkb" path="res://Scripts/vista_potenciador.gd" id="1_86kv4"]
 [ext_resource type="Texture2D" uid="uid://cxj3vyyaypw3x" path="res://src/image/Fondo.png" id="1_t6f00"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b3v7dry68cfng" path="res://src/image/Huevito.png" id="4_opojr"]
 [ext_resource type="Texture2D" uid="uid://b3268adv1qbt5" path="res://src/image/boton-menos.png" id="6_vob30"]
 [ext_resource type="PackedScene" uid="uid://db522mitycijf" path="res://Escenas/Dinosaurios/dinosaurio.tscn" id="6_vyyhi"]
+[ext_resource type="PackedScene" uid="uid://s7ijr2mberhq" path="res://Escenas/boton_salir_mapa.tscn" id="7_sbav1"]
 [ext_resource type="Script" uid="uid://c8turl5fd2wyy" path="res://Scripts/ir_nivel.gd" id="8_ku8mp"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_60mwe"]
@@ -134,6 +135,12 @@ offset_right = 1091.0
 offset_bottom = 496.0
 scale = Vector2(0.11, 0.11)
 theme_override_icons/icon = ExtResource("6_vob30")
+
+[node name="BotonSalirMapa" parent="Panel" instance=ExtResource("7_sbav1")]
+offset_left = 24.0
+offset_top = 8.0
+offset_right = 1048.0
+offset_bottom = 1032.0
 
 [node name="Huevito" type="Sprite2D" parent="."]
 position = Vector2(723, 232)

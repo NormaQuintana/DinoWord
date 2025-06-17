@@ -1,23 +1,24 @@
-[gd_scene load_steps=13 format=3 uid="uid://buwp5jka236t8"]
+[gd_scene load_steps=13 format=3 uid="uid://dpxpi1bgm8mn2"]
 
-[ext_resource type="Script" uid="uid://iy0h4c5ld5ak" path="res://Scripts/nivel_casa.gd" id="1_yr84w"]
-[ext_resource type="Texture2D" uid="uid://msxfetav52eb" path="res://src/image/CasaInteriorSala.png" id="2_6tect"]
-[ext_resource type="PackedScene" uid="uid://c07wilxhnposg" path="res://Escenas/Huevo/huevo_1.tscn" id="7_47jsf"]
-[ext_resource type="PackedScene" uid="uid://dbb2vasf4cji5" path="res://Escenas/Huevo/huevo_2.tscn" id="8_pn1bu"]
-[ext_resource type="PackedScene" uid="uid://d1dogphufb2kl" path="res://Escenas/Huevo/huevo_3.tscn" id="9_i1ff7"]
-[ext_resource type="PackedScene" uid="uid://cxj0ocsdxpnh" path="res://Escenas/Huevo/huevo_4.tscn" id="10_j6ljg"]
-[ext_resource type="Script" uid="uid://b4p1ml2bnpyyd" path="res://Scripts/boton_fin_nivel.gd" id="11_qfmpl"]
-[ext_resource type="PackedScene" uid="uid://s7ijr2mberhq" path="res://Escenas/boton_salir_mapa.tscn" id="12_ittkh"]
-[ext_resource type="PackedScene" uid="uid://ctdkv1xmhaw7h" path="res://Escenas/Enemigo.tscn" id="19_xlq7t"]
-[ext_resource type="PackedScene" uid="uid://c0dxpvjeu5h6s" path="res://Escenas/EnemigoSpawner.tscn" id="33_cnacb"]
-[ext_resource type="Script" uid="uid://ck0f7j4cekkl8" path="res://Scripts/DinosaurioManager.gd" id="34_mh7js"]
+[ext_resource type="Script" uid="uid://ceng2cysd8sgq" path="res://Scripts/nivel_oficina.gd" id="1_oja74"]
+[ext_resource type="Texture2D" uid="uid://6h8fye4a0ces" path="res://src/image/interiorOficina.png" id="2_oja74"]
+[ext_resource type="Script" uid="uid://b4p1ml2bnpyyd" path="res://Scripts/boton_fin_nivel.gd" id="3_lmpcn"]
+[ext_resource type="Script" uid="uid://ck0f7j4cekkl8" path="res://Scripts/DinosaurioManager.gd" id="4_ctpnj"]
+[ext_resource type="PackedScene" uid="uid://c07wilxhnposg" path="res://Escenas/Huevo/huevo_1.tscn" id="5_wxprv"]
+[ext_resource type="PackedScene" uid="uid://dbb2vasf4cji5" path="res://Escenas/Huevo/huevo_2.tscn" id="6_0whkv"]
+[ext_resource type="PackedScene" uid="uid://d1dogphufb2kl" path="res://Escenas/Huevo/huevo_3.tscn" id="7_7iimb"]
+[ext_resource type="PackedScene" uid="uid://cxj0ocsdxpnh" path="res://Escenas/Huevo/huevo_4.tscn" id="8_dco4x"]
+[ext_resource type="PackedScene" uid="uid://c0dxpvjeu5h6s" path="res://Escenas/EnemigoSpawner.tscn" id="9_66w6q"]
+[ext_resource type="PackedScene" uid="uid://ctdkv1xmhaw7h" path="res://Escenas/Enemigo.tscn" id="10_ndv84"]
+[ext_resource type="PackedScene" uid="uid://s7ijr2mberhq" path="res://Escenas/boton_salir_mapa.tscn" id="11_5pe0x"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qfmpl"]
-texture = ExtResource("2_6tect")
+texture = ExtResource("2_oja74")
+expand_margin_top = 100.0
 modulate_color = Color(1, 1, 1, 0.556863)
 
 [node name="Nivel" type="Node2D"]
-script = ExtResource("1_yr84w")
+script = ExtResource("1_oja74")
 
 [node name="Panel" type="Panel" parent="."]
 offset_right = 1150.0
@@ -137,21 +138,21 @@ grow_vertical = 0
 theme_override_font_sizes/font_size = 35
 text = "Salir al Mapa
 "
-script = ExtResource("11_qfmpl")
+script = ExtResource("3_lmpcn")
 
 [node name="DinosaurioManager" type="Node" parent="."]
-script = ExtResource("34_mh7js")
+script = ExtResource("4_ctpnj")
 
-[node name="Huevo1" parent="." instance=ExtResource("7_47jsf")]
+[node name="Huevo1" parent="." instance=ExtResource("5_wxprv")]
 position = Vector2(59, 150)
 
-[node name="Huevo2" parent="." instance=ExtResource("8_pn1bu")]
+[node name="Huevo2" parent="." instance=ExtResource("6_0whkv")]
 position = Vector2(59, 258)
 
-[node name="Huevo3" parent="." instance=ExtResource("9_i1ff7")]
+[node name="Huevo3" parent="." instance=ExtResource("7_7iimb")]
 position = Vector2(61, 369)
 
-[node name="Huevo4" parent="." instance=ExtResource("10_j6ljg")]
+[node name="Huevo4" parent="." instance=ExtResource("8_dco4x")]
 position = Vector2(61, 480)
 
 [node name="PuntoAparicionCarril1" type="Marker2D" parent="."]
@@ -166,13 +167,13 @@ position = Vector2(1176, 352)
 [node name="PuntoAparicionCarril4" type="Marker2D" parent="."]
 position = Vector2(1176, 470)
 
-[node name="EnemigoSpawner" parent="." node_paths=PackedStringArray("puntos_de_aparicion") instance=ExtResource("33_cnacb")]
+[node name="EnemigoSpawner" parent="." node_paths=PackedStringArray("puntos_de_aparicion") instance=ExtResource("9_66w6q")]
 position = Vector2(-3, 105)
 tiempo_de_aparicion = 5.0
 puntos_de_aparicion = [NodePath("../PuntoAparicionCarril1"), NodePath("../PuntoAparicionCarril2"), NodePath("../PuntoAparicionCarril3"), NodePath("../PuntoAparicionCarril4")]
-enemigo_scene = ExtResource("19_xlq7t")
+enemigo_scene = ExtResource("10_ndv84")
 
-[node name="BotonSalirMapa" parent="." instance=ExtResource("12_ittkh")]
+[node name="BotonSalirMapa" parent="." instance=ExtResource("11_5pe0x")]
 
 [node name="Preguntas" type="CanvasLayer" parent="."]
 

@@ -62,8 +62,8 @@ func _physics_process(delta):
 						en_contacto_con_huevo = true
 						huevo_roto = false # Reiniciar la bandera al iniciar el ataque
 			else:
-				animated_sprite.play("idle")
-				estado = State.IDLE
+				animated_sprite.play("move")
+				estado = State.RUNNING
 		State.HURT:
 			velocity = Vector2.ZERO
 			if en_contacto_con_dinosaurio:

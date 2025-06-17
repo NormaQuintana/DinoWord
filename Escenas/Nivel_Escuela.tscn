@@ -330,9 +330,9 @@ text = "Aparecer"
 
 [node name="Audio" type="Button" parent="Preguntas/voz"]
 layout_mode = 0
-offset_left = 360.0
+offset_left = 248.0
 offset_top = 103.0
-offset_right = 506.0
+offset_right = 624.0
 offset_bottom = 147.0
 text = "Reproducir"
 

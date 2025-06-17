@@ -285,52 +285,52 @@ offset_bottom = 535.0
 
 [node name="MensajeLabelVoz" type="Label" parent="Preguntas/voz"]
 layout_mode = 2
-offset_left = 238.5
-offset_top = 168.5
-offset_right = 641.5
-offset_bottom = 191.5
+offset_left = 248.0
+offset_top = 55.0
+offset_right = 651.0
+offset_bottom = 78.0
 size_flags_horizontal = 4
 text = "Escucha el audio y selecciona la traduccion correcta."
 horizontal_alignment = 1
 
 [node name="Audio" type="Button" parent="Preguntas/voz"]
 layout_mode = 2
-offset_left = 238.5
-offset_top = 195.5
-offset_right = 641.5
-offset_bottom = 226.5
+offset_left = 240.0
+offset_top = 95.0
+offset_right = 643.0
+offset_bottom = 126.0
 text = "Reproducir"
 
 [node name="palabra1" type="Button" parent="Preguntas/voz"]
 layout_mode = 2
-offset_left = 277.5
-offset_top = 230.5
-offset_right = 355.5
-offset_bottom = 261.5
+offset_left = 176.0
+offset_top = 143.0
+offset_right = 296.0
+offset_bottom = 207.0
 text = "Aparecer"
 
 [node name="palabra2" type="Button" parent="Preguntas/voz"]
 layout_mode = 2
-offset_left = 359.5
-offset_top = 230.5
-offset_right = 437.5
-offset_bottom = 261.5
+offset_left = 176.0
+offset_top = 239.0
+offset_right = 296.0
+offset_bottom = 303.0
 text = "Aparecer"
 
 [node name="palabra3" type="Button" parent="Preguntas/voz"]
 layout_mode = 2
-offset_left = 441.5
-offset_top = 230.5
-offset_right = 519.5
-offset_bottom = 261.5
+offset_left = 584.0
+offset_top = 143.0
+offset_right = 704.0
+offset_bottom = 207.0
 text = "Aparecer"
 
 [node name="palabra4" type="Button" parent="Preguntas/voz"]
 layout_mode = 2
-offset_left = 523.5
-offset_top = 230.5
-offset_right = 601.5
-offset_bottom = 261.5
+offset_left = 584.0
+offset_top = 239.0
+offset_right = 704.0
+offset_bottom = 303.0
 text = "Aparecer"
 
 [node name="frases" type="Panel" parent="Preguntas"]
